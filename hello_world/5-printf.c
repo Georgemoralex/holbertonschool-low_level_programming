@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
 *main - function printf
 *Description: Print a message using puts function
