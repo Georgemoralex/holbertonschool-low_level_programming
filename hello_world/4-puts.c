@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
-* Description: Print a message using puts function
+*main - function puts
+*Description: Print a message using puts function
+*Return: Always 0 (Success)
 */
 int main(void)
 {
