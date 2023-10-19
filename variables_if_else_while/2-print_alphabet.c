@@ -7,6 +7,6 @@
 int main(void)
 {
 	char abc[] = "abcdefghijklmnopqrstuvwxyz";
-	printf("%s",abc);
+	printf("%s\n", abc);
 	return (0);
 }
