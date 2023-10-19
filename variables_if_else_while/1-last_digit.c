@@ -6,7 +6,7 @@
 *Description: print the last digit of the random number
 *Return: Always 0 (Success)
 */
-int main(void)
+int lastDigit(void)
 {
 	int n;
 	int lastD;
