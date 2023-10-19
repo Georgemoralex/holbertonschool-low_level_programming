@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-	int c = "abcdefghijklmnopqrstuvwxyz";
-	putchar(c);
+	//int c = "abcdefghijklmnopqrstuvwxyz";
+	//putchar(c);
 	return (0);
 }
