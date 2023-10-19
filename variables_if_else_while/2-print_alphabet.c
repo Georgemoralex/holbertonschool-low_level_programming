@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - 2 print alphabet  
+*main - 2 print alphabet
 *Description: program to print alphabet
 *Return: Always 0 (Success)
 */
