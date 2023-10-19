@@ -1,11 +1,6 @@
 #include <stdio.h>
 /**
-* Function main
-*
-* Description: Print a message using puts function 
-* @Parameter: none
-* 
-* Return: Always 0 (Success)
+* Description: Print a message using puts function
 */
 int main(void)
 {
