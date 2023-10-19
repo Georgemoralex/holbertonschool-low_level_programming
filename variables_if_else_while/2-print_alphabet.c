@@ -6,5 +6,6 @@
 */
 int main(void)
 {
+	char abc = 'abcdefghijklmnopqrstuvwxyz'
 	return (0);
 }
