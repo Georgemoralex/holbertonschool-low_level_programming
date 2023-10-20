@@ -7,6 +7,10 @@
 int main(void)
 {
 	char abc[] = "abcdefghijklmnopqrstuvwxyz";
-	putchar(abc);
-	return (0);
+	int i;
+	for (i=0;i<26;i++)
+	{
+		putchar(abc[i]);
+	}
+	Return (0);
 }
