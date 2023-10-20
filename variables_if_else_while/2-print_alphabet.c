@@ -12,5 +12,5 @@ int main(void)
 	{
 		putchar(abc[i]);
 	}
-	Return (0);
+	return (0);
 }
