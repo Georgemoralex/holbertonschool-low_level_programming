@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
 *main - 0 1-alphabet
 *Description: program to print alphabet with prototypes
