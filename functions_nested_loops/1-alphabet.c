@@ -2,19 +2,16 @@
 /**
 *main - 0 1-alphabet
 *Description: program to print alphabet with prototypes
-*Return: Always 0 (Success)
+*Return: void
 */
-void print_alphabet(void);
-int main(void)
+void print_alphabet(void)
 {
 	char abc[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
 	for (i = 0; i < 26; i++)
 	{
-		putchar(abc[i]);
+		_putchar(abc[i]);
 	}
-	putchar('\n');
-	return (0);
+	_putchar('\n');
 }
-
