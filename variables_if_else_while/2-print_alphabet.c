@@ -12,6 +12,6 @@ int main(void)
 	{
 		putchar(abc[i]);
 	}
-	putchar("%s", \n);
+	putchar('\0');
 	return (0);
 }
