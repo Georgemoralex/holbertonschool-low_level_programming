@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*print_alphabet_10x - task 2-alphabet
+*print_alphabet_x10 - task 2-alphabet
 *Description: program to print alphabet 10x
 *Return: void
 */
