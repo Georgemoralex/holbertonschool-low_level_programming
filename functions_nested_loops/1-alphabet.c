@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*main - 0 1-alphabet
+*print_alphabet - task 1-alphabet
 *Description: program to print alphabet with prototypes
 *Return: void
 */
