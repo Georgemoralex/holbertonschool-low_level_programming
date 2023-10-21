@@ -5,6 +5,7 @@
 *@n: should be an integer
 *Return: return value of last digit
 */
+int _abs(int);
 int print_last_digit(int n)
 {
 	int lastD;
