@@ -8,7 +8,7 @@ void jack_bauer(void)
 {
 	char th[] = "012345678901234567890123";
 	char tm[] = "0123456789";
-	int j = 0;
+	/**int j = 0;*/
 	int i = 0;
 	int n = 0;
 	int k = 0;
