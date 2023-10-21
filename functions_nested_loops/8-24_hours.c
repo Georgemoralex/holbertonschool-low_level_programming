@@ -13,8 +13,8 @@ void jack_bauer(void)
 	int n = 0;
 	int k = 0;
 
-	for (j = 0; j <= 2; j++)
-	{
+	/**for (j = 0; j <= 2; j++)
+	*{*/
 		for (i = 0; i < 24; i++)
 		{
 			for (n = 0; n < 6; n++)
@@ -30,5 +30,5 @@ void jack_bauer(void)
 				}
 			}
 		}
-	}
+	/**}*/
 }
