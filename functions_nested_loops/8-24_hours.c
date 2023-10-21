@@ -36,7 +36,7 @@ void jack_bauer(void)
 		{
 			for (k = 0; k <= 9; k++)
 			{
-				_putchar(t[3]);
+				_putchar(50);
 				_putchar(t[i]);
 				_putchar(t[':']);
 				_putchar(t[n]);
