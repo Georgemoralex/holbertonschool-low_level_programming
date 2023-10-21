@@ -12,7 +12,7 @@ void jack_bauer(void)
 	int n = 0;
 	int k = 0;
 
-	for (j = 0; j <= 2; j++)
+	for (j = 0; j < 2; j++)
 	{
 		for (i = 0; i < 10; i++)
 		{
@@ -30,4 +30,18 @@ void jack_bauer(void)
 			}
 		}
 	}
-}
+	for (i = 0; i < 4; i++)
+	{
+		for (n = 0; n < 6; n++)
+		{
+			for (k = 0; k <= 9; k++)
+			{
+				_putchar(t[3]);
+				_putchar(t[i]);
+				_putchar(t[':']);
+				_putchar(t[n]);
+				_putchar(t[k]);
+				_putchar(t['\n']);
+			}
+		}
+	}
