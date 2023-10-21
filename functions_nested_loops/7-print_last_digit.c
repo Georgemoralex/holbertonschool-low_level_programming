@@ -4,11 +4,6 @@
 *Description: 'program to print last digit'
 *@n: should be an integer
 *Return: return value of last digit
-*
-*_abs - task 6 for holberton abs project
-*Description: 'function to compute abs value'
-*@n: param integer
-* Return: always abs value
 */
 int _abs(int);
 int print_last_digit(int n)
@@ -21,6 +16,12 @@ int print_last_digit(int n)
 	_putchar('0' + absD);
 	return (absD);
 }
+/**
+*_abs - task 6 for holberton abs project
+*Description: 'function to compute abs value'
+*@n: param integer
+* Return: always abs value
+*/
 int _abs(int n)
 {
 	if (n > 0)
