@@ -3,6 +3,7 @@
 *print_last_digit - task 7 for holberton project
 *Description: 'program to print last digit'
 *@n: ins int
+*@n: ins int abs
 *Return: return value of last digit
 */
 int _abs(int);
@@ -19,7 +20,6 @@ int print_last_digit(int n)
 /**
 *_abs - task 6 for holberton abs project
 *Description: 'function to compute abs value'
-*@n: integer number that will be used
 *Return: always abs value
 */
 int _abs(int n)
