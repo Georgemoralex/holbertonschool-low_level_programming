@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_islower - check if input char is lowercase
+*_islower - task 3 for holberton project
 *Description: 'program to check if char is lowercase'
 *@parameter: parameter should be a character
 *Return: return 1 if c is lowercase and 0 otherwise
