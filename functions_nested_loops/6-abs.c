@@ -2,7 +2,7 @@
 /**
 *_abs - task 6 for holberton project
 *Description: 'program to compute abs value'
-*@n: integer 
+*@n: integer
 * Return: always 0
 */
 int _abs(int n)
