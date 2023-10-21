@@ -1,10 +1,9 @@
 #include "main.h"
 /**
-*print_last_digit - task 7 for holberton project
-*Description: 'program to print last digit'
-*@n: ins int
-*@n: ins int abs
-*Return: return value of last digit
+* print_last_digit - task 7 for holberton project
+* Description: 'program to print last digit'
+* @n: ins int
+* Return: return value of last digit
 */
 int _abs(int);
 int print_last_digit(int n)
@@ -18,9 +17,10 @@ int print_last_digit(int n)
 	return (absD);
 }
 /**
-*_abs - task 6 for holberton abs project
-*Description: 'function to compute abs value'
-*Return: always abs value
+* _abs - task 6 for holberton abs project
+* Description: 'function to compute abs value'
+* @n: must be integer
+* Return: always absolute value
 */
 int _abs(int n)
 {
