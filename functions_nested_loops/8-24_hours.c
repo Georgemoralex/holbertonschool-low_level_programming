@@ -6,4 +6,6 @@
 */
 void jack_bauer(void)
 {
+	char t[] = '00:00';
+	_putchar(t[1]);
 }
