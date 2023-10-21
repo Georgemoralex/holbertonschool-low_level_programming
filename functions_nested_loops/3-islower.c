@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_islower - task 3 islower
+*_islower - check if input char is lowercase
 *Description: program to check if char is lowercase
 *Return: return 1 if c is lowercase and 0 otherwise
 */
