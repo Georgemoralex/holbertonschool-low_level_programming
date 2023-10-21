@@ -16,11 +16,11 @@ void times_table(void)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			result = digits[i] * digits[j];
+			result = (digits[i] - '0') * (digits[j] - '0');
 			countResult = countDigits(result);
-			if ( (countResult = 1) )
+			if ( (countResult == 1) )
 			{
-				_putchar(result);
+				_putchar(result + '0');
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
@@ -29,7 +29,7 @@ void times_table(void)
 			else
 			{
 				_putchar((result / 10) + '0');
-				_putchar((result / 10) + '0');
+				_putchar((result % 10) + '0');
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
