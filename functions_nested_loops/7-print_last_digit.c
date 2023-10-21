@@ -17,10 +17,10 @@ int print_last_digit(int n)
 	return (absD);
 }
 /**
-*_abs - task 7 for holberton project
-*Description: 'program to get abs value'
-*@n: should be an integer
-*Return: return value of last digit
+*_abs - task 6 for holberton abs project
+*Description: 'function to compute abs value'
+*@n: integer
+* Return: always abs value
 */
 int _abs(int n)
 {
