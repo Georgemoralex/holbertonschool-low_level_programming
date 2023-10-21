@@ -2,7 +2,7 @@
 /**
 *_islower - check if input char is lowercase
 *Description: program to check if char is lowercase
-*Parameter: integer c
+*@Parameter: integer c
 *Return: return 1 if c is lowercase and 0 otherwise
 */
 int _islower(int c)
