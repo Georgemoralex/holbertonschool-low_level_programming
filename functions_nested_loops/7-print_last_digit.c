@@ -16,3 +16,19 @@ int print_last_digit(int n)
 	_putchar('0' + absD);
 	return (absD);
 }
+
+int _abs(int n)
+{
+	if (n > 0)
+	{
+		return (n);
+	}
+		if (n < 0)
+		{
+			return (n * -1);
+		}
+	else
+        {
+		return (0)
+	}
+}
