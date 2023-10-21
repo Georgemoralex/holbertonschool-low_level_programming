@@ -10,18 +10,46 @@ void times_table(void)
 	int i = 0;
 	int j = 0;
 	int result = 0;
+	int countResult = 0;
 
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
 			result = digits[i] * digits[j];
-			_putchar((result / 10) + '0');
-			_putchar((result % 10) + '0');
-			_putchar(',');
-			_putchar(32);
-			_putchar(32);
-			_putchar('\n');
+			countResult = countDigits(result);
+			if (countResult = 1)
+			{
+				_putchar(result);
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('\n');
+			}
+			else
+			{
+				_putchar((result / 10) + '0');
+				_putchar((result / 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('\n');
+			}
 		}
 	}
+}
+/**
+*countDigits - auxiliary function
+*Description: 'function to count number of digits'
+*@n: number to be counted
+*Return: return the count of digits
+*/
+int countDigits(int n)
+{
+	int count = 0;
+	while (n != 0) {
+		n /= 10;
+		++count;
+	}
+	return count;
 }
