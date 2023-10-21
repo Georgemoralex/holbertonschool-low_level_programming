@@ -19,8 +19,8 @@ int print_last_digit(int n)
 /**
 *_abs - task 6 for holberton abs project
 *Description: 'function to compute abs value'
-*@n: integer
-* Return: always abs value
+*@n: integer number that will be used
+*Return: always abs value
 */
 int _abs(int n)
 {
