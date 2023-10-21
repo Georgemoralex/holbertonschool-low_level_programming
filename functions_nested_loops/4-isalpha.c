@@ -5,7 +5,7 @@
 *@c: should be a character
 *Return: return 1 if c is lowercase and 0 otherwise
 */
-int _islower(int c)
+int _isalpha(int c)
 {
 	if (c >= 'A' && c <= 'z')
 	{
