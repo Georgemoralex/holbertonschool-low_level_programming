@@ -7,9 +7,9 @@
 */
 int print_sign(int n)
 {
-	char* plus = "+";
-	char* minus = "-";
-	char* zero = "0";
+	char plus[] = "+";
+	char minus[] = "-";
+	char zero[] = "0";
 	
 	if (n > 0)
 	{
