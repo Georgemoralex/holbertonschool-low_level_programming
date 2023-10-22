@@ -14,10 +14,11 @@ void times_table(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		for (j = 0; j <= 9; j++)
+		for (j = 1; j <= 9; j++)
 		{
 			result = (digits[i] - '0') * (digits[j] - '0');
 			countResult = countDigits(result);
+			_putchar(48);
 			if ( (countResult == 1) || (result == 0))
 			{
 				_putchar(',');
