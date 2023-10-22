@@ -28,7 +28,7 @@ void times_table(void)
 				_putchar(32);
 				_putchar(result + '0');
 			}
-			else if ( (countResult == 2) )
+			else
 			{
 				_putchar(',');
 				_putchar(32);
