@@ -18,11 +18,11 @@ void times_table(void)
 		{
 			result = (digits[i] - '0') * (digits[j] - '0');
 			countResult = countDigits(result);
-			if ( (j == 0) )
+			if ((j == 0))
 			{
 				_putchar(48);
 			}
-			else if ( (countResult == 1) || (result == 0) )
+			else if ((countResult == 1) || (result == 0))
 			{
 				_putchar(',');
 				_putchar(32);
@@ -33,8 +33,8 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(32);
-				_putchar((result / 10) + '0');
-				_putchar((result % 10) + '0');
+				_putchar( (result / 10) + '0');
+				_putchar( (result % 10) + '0');
 
 			}
 		}
@@ -50,9 +50,10 @@ void times_table(void)
 int countDigits(int n)
 {
 	int count = 0;
+
 	while (n != 0) {
 		n /= 10;
 		++count;
 	}
-	return count;
+	return (count);
 }
