@@ -17,7 +17,7 @@ void times_table(void)
 		{
 			result = (i - '0') * (j - '0');
 			countResult = countDigits(result);
-			if ( (j == 0) || (i == 0))
+			if ( (j == 0) && (i == 0))
 			{
 				_putchar(48);
 			}
