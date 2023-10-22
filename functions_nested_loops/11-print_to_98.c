@@ -18,7 +18,7 @@ void print_to_98(int n)
 		}
 		print_digits(i);
 	}
-	else if (n > 98)
+	else if ((n > 98))
 	{
 		for (i = n; i > 98; i--)
 		{
@@ -28,7 +28,7 @@ void print_to_98(int n)
 		}
 		print_digits(i);
 	}
-	else if (n = 98)
+	else if ((n = 98))
 	{
 		print_digits(n);
 	}
@@ -45,7 +45,7 @@ void print_digits(int n)
 	if (n <0)
 	{
 		_putchar('-');
-		n = -n
+		n = -n;
 	}
 	if (n >= 10)
 	{
