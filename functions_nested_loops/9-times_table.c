@@ -33,8 +33,8 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(32);
-				_putchar( (result / 10) + '0');
-				_putchar( (result % 10) + '0');
+				_putchar((result / 10) + '0');
+				_putchar((result % 10) + '0');
 
 			}
 		}
@@ -51,7 +51,8 @@ int countDigits(int n)
 {
 	int count = 0;
 
-	while (n != 0) {
+	while (n != 0) 
+	{
 		n /= 10;
 		++count;
 	}
