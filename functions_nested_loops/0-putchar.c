@@ -11,9 +11,9 @@ int main(void)
 
 	for (i = 0; i < 8; i++)
 	{
-		putchar(abc[i]);
+		_putchar(abc[i]);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
 
