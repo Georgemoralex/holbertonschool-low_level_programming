@@ -18,20 +18,20 @@ void times_table(void)
 		{
 			result = (digits[i] - '0') * (digits[j] - '0');
 			countResult = countDigits(result);
-			if ( (countResult == 1) )
+			if ( (countResult == 1) || (result == 0))
 			{
-				_putchar(result + '0');
 				_putchar(',');
 				_putchar(32);
 				_putchar(32);
+				_putchar(result + '0');
 			}
 			else
 			{
-				_putchar((result / 10) + '0');
-				_putchar((result % 10) + '0');
 				_putchar(',');
 				_putchar(32);
-				_putchar(32);
+				_putchar((result / 10) + '0');
+				_putchar((result % 10) + '0');
+
 			}
 		}
 		_putchar('\n');
