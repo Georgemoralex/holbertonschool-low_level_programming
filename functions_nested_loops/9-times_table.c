@@ -22,10 +22,6 @@ void times_table(void)
 			{
 				_putchar(48);
 			}
-			else if ( (j == 9) && (result == 0) )
-			{
-				_putchar(48);
-			}
 			else if ( (countResult == 1) || (result == 0) )
 			{
 				_putchar(',');
