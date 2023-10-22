@@ -18,7 +18,6 @@ void times_table(void)
 		{
 			result = (digits[i] - '0') * (digits[j] - '0');
 			countResult = countDigits(result);
-			_putchar(48);
 			if ( (countResult == 1) || (result == 0))
 			{
 				_putchar(',');
@@ -36,6 +35,7 @@ void times_table(void)
 			}
 		}
 		_putchar('\n');
+		_putchar(48);
 	}
 }
 /**
