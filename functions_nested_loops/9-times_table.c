@@ -6,7 +6,7 @@
 */
 void times_table(void)
 {
-	int digits[] = "0123456789"
+	int digits[] = "0123456789";
 	int i = 0;
 	int j = 0;
 	int result = 0;
