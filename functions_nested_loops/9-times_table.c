@@ -6,6 +6,7 @@
 */
 void times_table(void)
 {
+	int digits[] = "0123456789"
 	int i = 0;
 	int j = 0;
 	int result = 0;
@@ -15,7 +16,7 @@ void times_table(void)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			result = (i - '0') * (j - '0');
+			result = (digits[i] - '0') * (digits[j] - '0');
 			countResult = countDigits(result);
 			if ( (j == 0) )
 			{
