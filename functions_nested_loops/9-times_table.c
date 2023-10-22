@@ -6,7 +6,6 @@
 */
 void times_table(void)
 {
-	char digits[] = "0123456789";
 	int i = 0;
 	int j = 0;
 	int result = 0;
@@ -14,18 +13,22 @@ void times_table(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		for (j = 1; j <= 9; j++)
+		for (j = 0; j <= 9; j++)
 		{
-			result = (digits[i] - '0') * (digits[j] - '0');
+			result = (i - '0') * (j - '0');
 			countResult = countDigits(result);
-			if ( (countResult == 1) || (result == 0))
+			if ( (j == 0) || (i == 0))
+			{
+				_putchar(48);
+			}
+			else if ( (countResult == 1) || (result == 0))
 			{
 				_putchar(',');
 				_putchar(32);
 				_putchar(32);
 				_putchar(result + '0');
 			}
-			else
+			else if
 			{
 				_putchar(',');
 				_putchar(32);
@@ -35,7 +38,6 @@ void times_table(void)
 			}
 		}
 		_putchar('\n');
-		_putchar(48);
 	}
 }
 /**
