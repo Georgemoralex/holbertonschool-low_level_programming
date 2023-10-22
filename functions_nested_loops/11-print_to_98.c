@@ -1,7 +1,8 @@
 #include "main.h"
 /**
-*times_table - task 11 for holberton project
+*print_to_98 - task 11 for holberton project
 *Description: 'program to print n to 98'
+*@n: natural number
 *Return: doesnt return anything
 */
 void print_to_98(int n)
@@ -17,6 +18,7 @@ void print_to_98(int n)
 			_putchar(32);
 		}
 		print_digits(i);
+		_putchar('\n');
 	}
 	else if ((n > 98))
 	{
@@ -27,10 +29,12 @@ void print_to_98(int n)
 			_putchar(32);
 		}
 		print_digits(i);
+		_putchar('\n');
 	}
-	else if ((n = 98))
+	else if ((n == 98))
 	{
 		print_digits(n);
+		_putchar('\n');
 	}
 
 }
@@ -42,7 +46,7 @@ void print_to_98(int n)
 */
 void print_digits(int n)
 {
-	if (n <0)
+	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
