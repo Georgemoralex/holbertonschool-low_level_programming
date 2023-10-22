@@ -17,11 +17,20 @@ void times_table(void)
 		{
 			result = (i - '0') * (j - '0');
 			countResult = countDigits(result);
-			if ( (j == 0) && (i == 0))
+			if ( (j == 0) )
 			{
 				_putchar(48);
 			}
-			else if ( (countResult == 1) || (result == 0))
+			else if ( (j == 9) && (result == 0) )
+			{
+				_putchar(48);
+			}
+			else if ( (j == 9) && (countResult != 1) )
+			{
+				_putchar((result / 10) + '0');
+				_putchar((result % 10) + '0');
+			}
+			else if ( (countResult == 1) || (result == 0) )
 			{
 				_putchar(',');
 				_putchar(32);
