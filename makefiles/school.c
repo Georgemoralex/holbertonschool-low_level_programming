@@ -5,11 +5,6 @@
  *
  * Return: Nothing
  */
-int main(void)
-{
-	print_school();
-	return (EXIT_SUCCESS);
-}
 void print_school(void)
 {
 	printf("j#0000000000000000000000000000000000000\n");
