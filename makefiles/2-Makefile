@@ -10,4 +10,4 @@ ${NAME}: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
 
 ${OBJ}: ${SRC}
-	${CC} -c ${SRC}
+	${CC} -c $< -o $@
