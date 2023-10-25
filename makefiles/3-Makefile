@@ -2,19 +2,19 @@ CC = gcc
 SRC = main.c school.c
 OBJ = $(patsubst %.c,%.o,$(SRC))
 NAME = school
-RM = wiper
+RM = rm
 
 all: $(OBJ)
 	${CC} ${OBJ} -o ${NAME}
 
 clean:
-	rm -f *~ *.swp ${NAME}
+	${RM} -f *~ *.swp ${NAME}
 
 oclean:
-	rm -f ${OBJ}
+	${RM} -f ${OBJ}
 
 fclean:
-	rm -f ${NAME} ${OBJ} *~ *.swp
+	${RM} -f ${NAME} ${OBJ} *~ *.swp
 
 re:
 	${CC} ${SRC} -o ${NAME}
