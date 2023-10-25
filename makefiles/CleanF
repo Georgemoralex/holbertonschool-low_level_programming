@@ -1,0 +1,2 @@
+Clean:
+	rm school.o main.o

@@ -7,3 +7,6 @@ all: ${NAME}
 
 ${NAME}: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
+
+${OBJ}: ${SRC}
+	gcc -c ${SRC}
