@@ -18,4 +18,4 @@ fclean:
 	${RM} -f ${NAME} ${OBJ} *~ *.swp
 
 re:
-	${CC} ${CFLAGS} ${SRC} -c -o ${NAME}
+	${CC} ${CFLAGS} ${SRC} -c
