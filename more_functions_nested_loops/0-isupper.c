@@ -7,7 +7,7 @@ Return: 1 if uppercase else 0 otherwise
 */
 int _isupper(int c)
 {
-	if (_isupper(c))
+	if (_isupper(_putchar(c)))
 	{
 		return(1);
 	}
