@@ -1,19 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 /**
-*main - 2 print alphabet
-*Description: program to print alphabet
-*Return: Always 0 (Success)
+*_isdigit - function similar to isdigit
+*Description: check if character is a digit between 0 and 9 or not
+*@c: is a number to be evaluated
+*Return: 1 if digit else 0 
 */
-int main(void)
+int _isdigit(int c)
 {
-        char abc[] = "abcdfghijklmnoprstuvwxyz";
-        int i;
-
-        for (i = 0; i < 24; i++)
+        if (c >= 0 && c <= 9)
         {
-                putchar(abc[i]);
+                return (1);
         }
-        putchar('\n');
-        return (0);
+        else
+        {
+                return (0);
+        }
 }
-
