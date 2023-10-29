@@ -5,7 +5,7 @@
 *@c: is a character to be evaluated
 Return: 1 if uppercase else 0 otherwise
 */
-int _isupper(int c):
+int _isupper(int c)
 {
 	if (_isupper(c))
 	{
@@ -15,5 +15,4 @@ int _isupper(int c):
 	{
 		return(0)
 	}
-}
-
+}	
