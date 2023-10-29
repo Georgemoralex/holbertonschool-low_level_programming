@@ -4,7 +4,7 @@
 *Description: print a square n times lenght
 *@size: number for lenght of square
 */
-void print_square(int size);
+void print_square(int size)
 {
 	int r;
 	int c;
