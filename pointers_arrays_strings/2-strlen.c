@@ -7,14 +7,12 @@
 */
 int _strlen(char *s)
 {
-	char t = *s;
-	char text[] = t;
 	int i;
 	int j;
 
-	for (i = 0; j < 1; i++)
+	for (s = 0; j < 1; s++)
 		{
-			if((text[i] = '\n'))
+			if((*s = '\n'))
 				{
 					j = 1;
 				}
@@ -23,5 +21,5 @@ int _strlen(char *s)
 					j = 0;
 				}
 		}
-	return (i);
+	return (s);
 }
