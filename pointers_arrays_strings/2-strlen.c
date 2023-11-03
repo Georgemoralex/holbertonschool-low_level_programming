@@ -13,13 +13,13 @@ int _strlen(char *s)
 
 	for (i = 0; j < 1; i++)
 	{
-		if ((s[i] != '\n'))
+		if ((s[i] = '\n'))
 			{
-				j = 0;
+				j = 1;
 			}
 		else
 			{
-				j = 1;
+				j = 0;
 			}
 	}
 	return (i);
