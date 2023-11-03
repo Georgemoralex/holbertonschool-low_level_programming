@@ -7,14 +7,13 @@
 */
 int _strlen(char *s)
 {
-	char text[0];
+	char text[] = *s;
 	int i;
 	int j;
 
-	text[] = *s;
 	for (i = 0; j < 1; i++)
 		{
-			if(text[i] = '\n')
+			if((text[i] = '\n'))
 				{
 					j = 1;
 				}
