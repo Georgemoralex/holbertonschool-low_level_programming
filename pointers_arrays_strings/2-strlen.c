@@ -7,7 +7,8 @@
 */
 int _strlen(char *s)
 {
-	char text[] = *s;
+	char t = *s;
+	char text[] = t;
 	int i;
 	int j;
 
