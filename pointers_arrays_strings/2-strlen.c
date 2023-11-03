@@ -1,18 +1,25 @@
 #include "main.h"
 /**
-*_isdigit - function similar to isdigit
-*Description: check if character is a digit between 0 and 9 or not
-*@c: is a number to be evaluated
-*Return: 1 if digit else 0
+*_strlen - function to calculate lenght
+*Description: gets the lenght of a string
+*@s: is a string of characters
+*Return: the lenght of the string as integer
 */
-int _isdigit(int c)
+int _strlen(char *s)
 {
-	if (c >= 48 && c <= 57)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	char text[];
+
+	text[] = *s;
+	for (i = 0; j < 1; i++)
+		{
+			if(text[i] = '\n')
+				{
+					j = 1;
+				}
+			else
+				{
+					j = 0;
+				}
+		}
+	return (i);
 }
