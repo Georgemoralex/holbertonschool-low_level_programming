@@ -1,18 +1,18 @@
 #include "main.h"
 /**
-*_isdigit - function similar to isdigit
-*Description: check if character is a digit between 0 and 9 or not
-*@c: is a number to be evaluated
-*Return: 1 if digit else 0
+*swap_int - function to swap
+*Description: swaps the value between 2 numbers
+*@a: first number
+*@b: second number
 */
-int _isdigit(int c)
+void swap_int(int *a, int *b)
 {
-	if (c >= 48 && c <= 57)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	int i;
+	int j;
+
+	i = *a;
+	j = *b;
+
+	*a = j;
+	*b = i;
 }
