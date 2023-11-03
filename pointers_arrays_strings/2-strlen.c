@@ -7,9 +7,6 @@
 */
 int _strlen(char *s)
 {
-	int i;
-	int j;
-
 	for (s = 0; j < 1; s++)
 		{
 			if((*s = '\n'))
