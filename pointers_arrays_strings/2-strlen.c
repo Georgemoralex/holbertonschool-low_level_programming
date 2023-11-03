@@ -8,7 +8,18 @@
 */
 int _strlen(char *s)
 {
-	char c = *s;
-	
-	printf(c);
+	i = 0;
+
+	for (i = 0; j < 1; i++)
+	{	
+		if ((s[i] != "\n"))
+			{
+				j = 0;
+			}
+		else
+			{
+				j = 1;
+			}
+	}	
+	return (i);
 }
