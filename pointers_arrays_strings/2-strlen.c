@@ -15,11 +15,11 @@ int _strlen(char *s)
 	{
 		if ((s[i] != '\n'))
 			{
-				j = 1;
+				j = 0;
 			}
 		else
 			{
-				j = 0;
+				j = 1;
 			}
 	}
 	return (i);
