@@ -7,10 +7,12 @@
 */
 int _strlen(char *s)
 {
-	int j;
-	for (s = 0; j < 1; s++)
+	char c = *s;
+	int i,j;
+	
+	for (i = 0; j < 1; i++)
 		{
-			if((*s = '\n'))
+			if((c[i] = '\n'))
 				{
 					j = 1;
 				}
