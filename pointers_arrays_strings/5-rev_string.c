@@ -1,18 +1,32 @@
 #include "main.h"
 /**
-*_isdigit - function similar to isdigit
-*Description: check if character is a digit between 0 and 9 or not
-*@c: is a number to be evaluated
-*Return: 1 if digit else 0
+*rev_string - function to reverse string
+*Description: reverses string given
+*@s: string to be reversed
 */
-int _isdigit(int c)
+void rev_string(char *s)
 {
-	if (c >= 48 && c <= 57)
+	int i;
+	char c[_strlen(s)];
+	int j;
+
+	for (i = _strlen(s) - 1, j = 0; i >= 0; i--, j++)
 	{
-		return (1);
+		c[j] = s[i];
 	}
-	else
+}
+/**
+ *_strlen - function to calculate lenght
+ *Description: gets the lenght of a string
+ *@s: is a string of characters
+ *Return: the lenght of the string as integer
+ */
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		return (0);
 	}
+	return (i);
 }
