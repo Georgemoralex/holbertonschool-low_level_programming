@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-*_puts - function similar to puts
-*Description: print string in console
+*puts2 - function similar to puts
+*Description: print every other character in console
 *@str: string
 */
 void puts2(char *str)
