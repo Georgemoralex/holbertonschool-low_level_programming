@@ -1,18 +1,31 @@
 #include "main.h"
 /**
-*_isdigit - function similar to isdigit
-*Description: check if character is a digit between 0 and 9 or not
-*@c: is a number to be evaluated
-*Return: 1 if digit else 0
+*_puts - function similar to puts
+*Description: print string in console
+*@str: string
 */
-int _isdigit(int c)
+void puts2(char *str)
 {
-	if (c >= 48 && c <= 57)
+	int i;
+
+	for (i = 0; i < _strlen(str); i += 2)
 	{
-		return (1);
+		_putchar(str[i]);
 	}
-	else
+	_putchar(10);
+}
+/**
+ *_strlen - function to calculate lenght
+ *Description: gets the lenght of a string
+ *@s: is a string of characters
+ *Return: the lenght of the string as integer
+ */
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		return (0);
 	}
+	return (i);
 }
