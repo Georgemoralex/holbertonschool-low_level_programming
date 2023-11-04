@@ -1,18 +1,46 @@
 #include "main.h"
 /**
-*_isdigit - function similar to isdigit
-*Description: check if character is a digit between 0 and 9 or not
-*@c: is a number to be evaluated
-*Return: 1 if digit else 0
+*puts_half - function similar to puts
+*Description: prints half of the  string in console
+*@str: string
 */
-int _isdigit(int c)
+void put_half(char *str)
 {
-	if (c >= 48 && c <= 57)
+	int i;
+	int length = _strlen(str);
+	int half = length / 2;
+	int half_odd = (length - 1) / 2;
+	int reminder = length % 2;
+
+	if ((reminder == 0))
 	{
-		return (1);
+		for (i = half; i < length; i++)
+		{
+			_putchar(str[i]);
+		}
+		_putchar(10);
 	}
 	else
 	{
-		return (0);
+		for (i = half_odd; i < length; i++)
+		{
+			_putchar(str[i]);
+		}
+		_putchar(10);
 	}
+}
+/**
+ *_strlen - function to calculate lenght
+ *Description: gets the lenght of a string
+ *@s: is a string of characters
+ *Return: the lenght of the string as integer
+ */
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+	}
+	return (i);
 }
