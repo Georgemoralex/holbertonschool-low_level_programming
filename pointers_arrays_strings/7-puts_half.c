@@ -4,7 +4,7 @@
 *Description: prints half of the  string in console
 *@str: string
 */
-void put_half(char *str)
+void puts_half(char *str)
 {
 	int i;
 	int length = _strlen(str);
