@@ -1,10 +1,20 @@
 #include "main.h"
 /**
-*reset_to_98 - function for a pointer to an integer
-*Description: modifies value to the variable it points to to 98
-*@n: pointer to n
+* string_toupper - uppercase converter
+* Description: converts from lowercase to uppercase
+* @s: 1st string
+* Return: converted string
 */
-void reset_to_98(int *n)
+char *string_toupper(char *s)
 {
-	*n = 98;
+	int count = 0;
+
+	while (*(s + count) != '\0')
+	{
+		if ((*(s + count) >= 97) && (*(s + count) <= 122))
+			*(s + count) = *(s + count) - 32;
+		count++;
+	}
+
+	return (s);
 }
