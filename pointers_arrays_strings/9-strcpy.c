@@ -11,7 +11,6 @@ char *_strcpy(char *dest, char *src)
 	int length = _strlen(src);
 	int i;
 
-	dest[] = {};
 	for (i = 0; i < length; i++)
 	{
 		if ((src[i] != '\0'))
