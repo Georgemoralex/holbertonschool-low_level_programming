@@ -1,18 +1,18 @@
 #include "main.h"
+#include <stdio.h>
 /**
-*_isdigit - function similar to isdigit
-*Description: check if character is a digit between 0 and 9 or not
-*@c: is a number to be evaluated
-*Return: 1 if digit else 0
+*print_array - function to print n numbers of array
+*Description: print n numbers from an array separated by commas
+*@s: array of numbers
+*@n; number of elements from array to be printed
 */
-int _isdigit(int c)
+void print_array(int *a, int n)
 {
-	if (c >= 48 && c <= 57)
+	int i;
+
+	for (i = 0; i < n; i++)
 	{
-		return (1);
+		printf("%d, ", a[i]);
 	}
-	else
-	{
-		return (0);
-	}
+	printf("%d\n", a[n - 1]);
 }
