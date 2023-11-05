@@ -12,7 +12,7 @@ void puts_half(char *str)
 	int half_odd = (length - 1) / 2;
 	int reminder = length % 2;
 
-	if ((reminder == 1))
+	if ((reminder == 0))
 	{
 		for (i = half; i < length; i++)
 		{
@@ -22,7 +22,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		for (i = half_odd; i < length; i++)
+		for (i = length - half_odd; i < length; i++)
 		{
 			_putchar(str[i]);
 		}
