@@ -1,10 +1,20 @@
 #include "main.h"
 /**
-*reset_to_98 - function for a pointer to an integer
-*Description: modifies value to the variable it points to to 98
-*@n: pointer to n
+* _strncpy - copy string
+* Description: copy a string from src into dest
+* @dest: 1st string
+* @src: 2nd string
+* @n: bytes from src
+* Return: the pointer to char
 */
-void reset_to_98(int *n)
+char *_strncpy(char *dest, char *src, int n)
 {
-	*n = 98;
+	int i;
+
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+	for ( ; i < n; i++)
+		dest[i] = '\0';
+
+	return (dest);
 }
