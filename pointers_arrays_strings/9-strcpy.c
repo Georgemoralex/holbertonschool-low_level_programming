@@ -13,7 +13,10 @@ char *_strcpy(char *dest, char *src)
 
 	for (i = 0; i < length; i++)
 	{
+		if ((src[i] != \n))
+		{
 		dest[i] = src[i];
+		}
 	}
 	return (dest);
 }
