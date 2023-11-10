@@ -1,18 +1,23 @@
 #include "main.h"
 /**
-*swap_int - function to swap
-*Description: swaps the value between 2 numbers
-*@a: first number
-*@b: second number
+*_strchr - function that locates a character in a string
+*Description: locates a character c in a string s
+*@s: string
+*@c: character c
+*Return: first occurence of the character c or null if not found
 */
-void swap_int(int *a, int *b)
+char *_strchr(char *s, char c)
 {
-	int i;
-	int j;
+	int counter = 0;
 
-	i = *a;
-	j = *b;
-
-	*a = j;
-	*b = i;
+	while (*s != c)
+	{
+		s++;
+		counter++;
+	}
+	while (s[counter] != '\0')
+	{
+		_putchar(s[counter];
+		counter++;
+	}
 }
