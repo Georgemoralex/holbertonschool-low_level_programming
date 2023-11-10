@@ -1,18 +1,19 @@
 #include "main.h"
 /**
-*swap_int - function to swap
-*Description: swaps the value between 2 numbers
-*@a: first number
-*@b: second number
+*_memcpy - function that copies memory area
+*Description: copy n bytes from src area to dest area
+*@dest: destination array
+*@src: source array
+*@n: n bytes
+*Return: pointer to dest
 */
-void swap_int(int *a, int *b)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int i;
-	int j;
+	unsigned int i;
 
-	i = *a;
-	j = *b;
-
-	*a = j;
-	*b = i;
+	for (i = 0; i < n; i++)
+	{
+		dest[i] = src[i];
+	}
+	return (dest);
 }
