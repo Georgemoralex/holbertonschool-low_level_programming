@@ -22,10 +22,10 @@ char *_strchr(char *s, char c)
 	}
 	else
 	{
-		while (s[counter] != '\0')
+		while (*s != '\0')
 		{
-			return (s[counter]);
-			counter++;
+			return (s);
+			s++
 		}
 	}
 }
