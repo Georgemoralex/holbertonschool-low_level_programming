@@ -28,6 +28,6 @@ char *_strchr(char *s, char c)
 			str += _putchar(s[counter]);
 			counter++;
 		}
-		return (*str);
+		return (str);
 	}
 }
