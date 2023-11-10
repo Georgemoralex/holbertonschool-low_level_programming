@@ -9,16 +9,24 @@
 char *_strchr(char *s, char c)
 {
 	int counter = 0;
+	char str;
 
 	while (*s != c)
 	{
 		s++;
 		counter++;
 	}
-	while (s[counter] != '\0')
+	if ((s == '\0'))
 	{
-		str += _putchar(s[counter]);
-		counter++;
+		return (NULL);
 	}
-	Return (str);
+	else
+	{
+		while (s[counter] != '\0')
+		{
+			str += _putchar(s[counter]);
+			counter++;
+		}
+		return (str);
+	}
 }
