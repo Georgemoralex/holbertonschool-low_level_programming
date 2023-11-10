@@ -25,7 +25,7 @@ char *_strchr(char *s, char c)
 	{
 		while (s[counter] != '\0')
 		{
-			return (_putchar(s[counter]));
+			return (s[counter]);
 			counter++;
 		}
 	}
