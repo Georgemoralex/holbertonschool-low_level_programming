@@ -9,12 +9,9 @@
 */
 char *_strchr(char *s, char c)
 {
-	int counter = 0;
-
 	while (*s != c)
 	{
 		s++;
-		counter++;
 	}
 	if ((*s == '\0'))
 	{
@@ -22,10 +19,6 @@ char *_strchr(char *s, char c)
 	}
 	else
 	{
-		while (*s != '\0')
-		{
-			return (s);
-			s++;
-		}
+		return (s);
 	}
 }
