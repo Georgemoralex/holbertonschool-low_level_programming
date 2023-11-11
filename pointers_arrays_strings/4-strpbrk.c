@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
 *_strpbrk - function to print string from first byte found in acceot
 *Description: get first occurence in the string s of any of the bytes in accept
