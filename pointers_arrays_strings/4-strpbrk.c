@@ -1,18 +1,33 @@
 #include "main.h"
 /**
-*swap_int - function to swap
-*Description: swaps the value between 2 numbers
-*@a: first number
-*@b: second number
+*_strpbrk - function to print string from first byte found in acceot
+*Description: get first occurence in the string s of any of the bytes in accept
+*@s: string that will be evaluated
+*@accept: string with values
+*Return: a pointer to the byte in s that matches first byte in accept
 */
-void swap_int(int *a, int *b)
+char *_strpbrk(char *s, char *accept)
 {
-	int i;
-	int j;
+	int position = 0;
+	char *temp;
 
-	i = *a;
-	j = *b;
+	temp = accept;
 
-	*a = j;
-	*b = i;
+	while (*s != '\0')
+	{
+		while (*accept != '\0')
+		{
+			if (*s != *accept)
+			{
+				accept++;
+			}
+			else
+			{
+				return (s);
+			}
+		}
+	s++;
+	position++;
+	accept = temp;
+	}
 }
