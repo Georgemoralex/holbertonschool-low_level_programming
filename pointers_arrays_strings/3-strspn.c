@@ -1,18 +1,28 @@
 #include "main.h"
 /**
-*swap_int - function to swap
-*Description: swaps the value between 2 numbers
-*@a: first number
-*@b: second number
+*_strspn - gets length of a prefix string
+*Description: gets # of chars of 1st string that matches the chars in 2d string
+*@s: first string that will be evaluated
+*@accept: chars to be found in string 1
+*Return: returns number of bytes of 1st string that matches 2nd string
 */
-void swap_int(int *a, int *b)
+unsigned int _strspn(char *s, char *accept)
 {
-	int i;
-	int j;
+	unsigned int counter = 0;
+	char temp = *accept;
 
-	i = *a;
-	j = *b;
-
-	*a = j;
-	*b = i;
+	while (*accept != '\0')
+    	{
+		if (*s == *accept)
+		{
+			counter++;
+			*accept = temp;
+			s++;
+		}
+		else
+		{
+			accept++;
+		}
+	}
+	return (counter);
 }
