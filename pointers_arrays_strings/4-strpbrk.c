@@ -24,11 +24,11 @@ char *_strpbrk(char *s, char *accept)
 			else
 			{
 				return (s);
-				break
 			}
 		}
 	s++;
 	position++;
 	accept = temp;
 	}
+	return (s - 1);
 }
