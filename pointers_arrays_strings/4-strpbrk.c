@@ -30,5 +30,12 @@ char *_strpbrk(char *s, char *accept)
 	position++;
 	accept = temp;
 	}
-	return (s - 1);
+	if (*s != '\0')
+	{
+		return (s - 1);
+	}
+	else
+	{
+		return (NULL);
+	}
 }
