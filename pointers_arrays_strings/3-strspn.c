@@ -9,14 +9,16 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int counter = 0;
-	char temp = *accept;
+	char *temp;
+
+	temp = accept;
 
 	while (*accept != '\0')
 	{
 		if (*s == *accept)
 		{
 			counter++;
-			*accept = temp;
+			accept = temp;
 			s++;
 		}
 		else
