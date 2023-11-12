@@ -1,18 +1,34 @@
 #include "main.h"
 /**
-*swap_int - function to swap
-*Description: swaps the value between 2 numbers
-*@a: first number
-*@b: second number
+*_strstr - function to find needle in haystack
+*Description: finds the first occurence of the needle in haystack
+*@haystack: where needle will be found
+*@needle: string to be found in haystack
 */
-void swap_int(int *a, int *b)
+char *_strstr(char *haystack, char *needle)
 {
-	int i;
-	int j;
+	int hLength = 0;
+	int nLength = 0;
 
-	i = *a;
-	j = *b;
+	if (haystack == NULL || needle == NULL) 
+	{
+		return NULL; 
+	}
 
-	*a = j;
-	*b = i;
+	while (haystack[hLength] != '\0') 
+	{
+		nLength = 0; 
+
+		while (needle[nLength] != '\0' && haystack[hLength + nLength] == needle[nLength]) 
+		{
+			nLength++;
+		}
+
+		if (needle[nLength] == '\0') 
+		{
+			return &haystack[hLength]; 
+		}
+		hLength++;
+	}
+	return NULL; 
 }
