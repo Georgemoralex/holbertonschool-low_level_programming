@@ -15,7 +15,7 @@ void print_diagsums(int *a, int size)
 
 	while (row < size)
 	{
-		sumUp += *(a + row*size + row);
+		sumUp += *(a + row * size + row);
 		row++;
 	}
 	row = 0;
