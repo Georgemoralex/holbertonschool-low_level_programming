@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio>
+#include <stdio.h>
 /**
 *print_diagsums - sum array diagonals
 *Description: sums the 2 main diagonals of the given array
