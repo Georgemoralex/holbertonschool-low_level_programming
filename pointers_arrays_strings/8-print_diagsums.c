@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio>
 /**
 *print_diagsums - sum array diagonals
 *Description: sums the 2 main diagonals of the given array
@@ -8,10 +9,7 @@
 */
 void print_diagsums(int *a, int size)
 {
-	int counterUp = 0;
-	int counterDown = size - 1;
 	int row = 0;
-	int column = 0;
 	int sumUp = 0;
 	int sumDown = 0;
 
