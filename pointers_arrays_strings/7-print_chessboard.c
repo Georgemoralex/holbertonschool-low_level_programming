@@ -1,18 +1,22 @@
 #include "main.h"
 /**
-*swap_int - function to swap
-*Description: swaps the value between 2 numbers
-*@a: first number
-*@b: second number
+*print_chessboard - function to print chessboard
+*Description: prints all characters of array a
+*@a: 2d array with 8 characters in each row
+*Return: void
 */
-void swap_int(int *a, int *b)
+void print_chessboard(char (*a)[8])
 {
+	int counter = 0;
 	int i;
-	int j;
 
-	i = *a;
-	j = *b;
-
-	*a = j;
-	*b = i;
+	while (counter < 8)
+	{
+		for (i = 0; i < 8; i++)
+		{
+			_putchar(*(*(a + counter) + i));
+		}
+		_putchar(10);
+		counter++;
+	}
 }
