@@ -6,3 +6,4 @@ int _sqrt_recursion(int n);
 int testsquare(int n, int i);
 int is_prime_number(int n);
 int auxprime(int n, int m);
+int _strlen_recursion(char *s);
