@@ -13,6 +13,7 @@ int _sqrt_recursion(int n)
  * testsquare - function that calculates square root
  * * Description: function that calculates the square root of n number
  * @n: integer, number to get the square root from
+ * @i: integer for test square function
  * Return: integer with result or -1 if result is not narural
  */
 
@@ -22,16 +23,16 @@ int testsquare(int n, int i)
 	{
 		return (-1);
 	}
-	
+
 	if ((i * i) > n)
 	{
 		return (-1);
 	}
-	
+
 	if (i * i == n)
 	{
 		return (i);
 	}
-	
+
 	return (testsquare(n, i + 1));
 }
