@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
             }
             else
             {
-                prinf("Error\n");
+                printf("Error\n");
                 return (1);
             }
         }
@@ -34,5 +34,5 @@ int main(int argc, char *argv[])
     {
         printf("0\n");
     }
-    printf("%d", sum;
+    printf("%d", sum);
 }
