@@ -6,8 +6,9 @@
 *@argv: array of pointers to the string for argc arguments
 *Return: 0 for success 
 */
-int main(char *argv[])
+int main(int argc, char *argv[])
 {
+    int arguments = argc;
     printf("%s",argv[0]);
     return (0);
 }
