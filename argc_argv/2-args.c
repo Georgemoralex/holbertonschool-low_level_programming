@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - prints number of args
+*main - prints actual arguments 
 *Description: prints all arguments passed into it
 *@argc: integer with count of arguments supplied to the program
 *@argv: array of pointers to the string for argc arguments
@@ -10,9 +10,9 @@ int main(int argc, char *argv[])
 {
     int i;
 
-    if (argc > 1)
+    if (argc > 0)
     {
-        for (i = 1; i < argc; i++)
+        for (i = 0; i < argc; i++)
             printf("%s\n",argv[i]);
     }
     printf("0\n");
