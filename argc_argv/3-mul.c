@@ -9,6 +9,8 @@
 */
 int main(int argc, char *argv[])
 {   
+    int a, b, result;
+    
     if (argv != NULL && argc > 2)
 	{
         a = atoi(argv[1]);
