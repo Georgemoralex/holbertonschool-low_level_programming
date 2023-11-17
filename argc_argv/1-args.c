@@ -7,14 +7,11 @@
 *@argv: array of pointers to the string for argc arguments
 *Return: 0 for success 
 */
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-    if (argv != NULL)
+    while (argv != NULL)
     {
         printf("%d\n", (argc - 1));
     }
-    else
-    {
-        printf("0\n");
-    }
+    return (0);
 }
