@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
 *main - prints adds of positive numbers
 *Description: only positive numbers are added, all others are erros
