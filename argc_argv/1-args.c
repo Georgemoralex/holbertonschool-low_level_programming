@@ -9,7 +9,7 @@
 */
 int main(int argc, char *argv[])
 {
-    while (argv != NULL)
+    if (argv != NULL)
     {
         printf("%d\n", (argc - 1));
     }
