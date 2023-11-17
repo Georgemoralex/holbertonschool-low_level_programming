@@ -6,7 +6,7 @@
 *@argv: array of pointers to the string for argc arguments
 *Return: 0 for success 
 */
-int main(int argc)
+int main(int argc, void *argv[])
 {
     printf("%d\n",argc);
     return (0);
