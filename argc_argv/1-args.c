@@ -7,7 +7,7 @@
 *@argv: array of pointers to the string for argc arguments
 *Return: 0 for success 
 */
-int main(int argc, char *argv[])
+void main(int argc, char *argv[])
 {
     if (argv != NULL)
     {
@@ -15,6 +15,6 @@ int main(int argc, char *argv[])
     }
     else
     {
-        return (0);
+        printf("0\n");
     }
 }
