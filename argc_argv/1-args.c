@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stddef.h>
 /**
 *main - prints number of args
 *Description: prints only number of arguments passed into it
@@ -6,8 +7,11 @@
 *@argv: array of pointers to the string for argc arguments
 *Return: 0 for success 
 */
-int main(int argc, void *argv[])
+int main(int argc, char *argv[])
 {
-    printf("%d\n",argc);
+    if (argv != NULL)
+    {
+        printf("%d\n",argc);
+    }
     return (0);
 }
