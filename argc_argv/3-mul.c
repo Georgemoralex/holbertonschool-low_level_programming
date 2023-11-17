@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stddef.h>
+#include <stdlib.h>
 /**
 *main - prints multiplication of args
 *Description: prints multiplication of 2 args passed into it
@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {   
     int a, b, result;
     
-    if (argv != NULL && argc > 2)
+    if (argc > 2)
 	{
         a = atoi(argv[1]);
         b = atoi(argv[2]);
