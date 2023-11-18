@@ -19,7 +19,8 @@ for (i = 1; i < argc; i++)
 {
 if (argv[i][0] == '-')
 {
-for (k = 1; k < strlen(argv[i]); k++)
+s1 = strlen(argv[i]);
+for (k = 1; k < s1; k++)
 {
 if (isdigit(argv[i][k]) == 0)
 {
