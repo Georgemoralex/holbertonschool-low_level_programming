@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 /**
 *main - prints adds of positive numbers
 *Description: only positive numbers are added, all others are erros
@@ -9,34 +10,42 @@
 *Return: 0 for success and 1 for error
 */
 int main(int argc, char *argv[])
-{   
-    int sum = 0;
-    int i;
-    int t;
+{
+int i, j, k, sum = 0;
 
-  if (argc > 1)
-    {
-        for (i = 1; i < argc; i++)
-        {
-          t = isdigit(*argv[i]);
-          if (t > 0)
-          {
-            if (atoi(argv[i]) > 0)
-            {
-              sum += atoi(argv[i]);
-            }
-          }
-          else
-          {
-                printf("Error\n");
-                return (1);
-          }
-        }
-    } 
-    else
-    {
-        printf("0\n");
-    }
-    printf("%d\n", sum);
-    return (0);
+if (argc > 1)
+{
+for (i = 1; i < argc; i++)
+{
+if (argv[i][0] == '-')
+{
+for (k = 1; k < strlen(argv[i]); k++)
+{
+if (isdigit(argv[i][k]) == 0)
+{
+printf("Error\n");
+return (1);
+}
+}
+}
+else
+{
+for (j = 0 ; j < strlen(argv[i]); j++)
+{
+if (isdigit(argv[i][j]) == 0)
+{
+printf("Error\n");
+return (1);
+}
+}
+}
+
+if (atoi(argv[i]) > 0)
+{
+sum += atoi(argv[i]);
+}
+}
+}
+printf("%d\n", sum);
+return (0);
 }
