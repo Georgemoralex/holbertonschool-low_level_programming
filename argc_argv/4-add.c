@@ -32,7 +32,7 @@ return (1);
 }
 else
 {
-for (j = 0 ; j < strlen(argv[i]); j++)
+for (j = 0 ; j < s1; j++)
 {
 if (isdigit(argv[i][j]) == 0)
 {
