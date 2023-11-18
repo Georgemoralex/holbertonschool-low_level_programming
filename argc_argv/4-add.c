@@ -10,7 +10,7 @@
 *Return: 0 for success and 1 for error
 */
 int main(int argc, char *argv[])
-{   
+{
 	int i, j, k, s1, sum = 0;
 
 	if (argc > 1)
