@@ -53,7 +53,9 @@ int mod(int cents, int mod, int small)
 
 int main(int argc, char *argv[])
 {
-	int  mod = 1, small, cents, total = 0;
+	int  mod = 1;
+	int small, cents;
+	int total = 0;
 
 	if (argc > 2 || argc == 1)
 	{printf("Error\n");
@@ -70,7 +72,7 @@ int main(int argc, char *argv[])
 
 	if (cents == 0)
 	{
-		printf("%d\n", t);
+		printf("%d\n", total);
 		return (0);
 	}
 
