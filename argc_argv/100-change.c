@@ -16,10 +16,8 @@ int main(int argc, char *argv[])
 	int i, mod = 1, modOp, smallest, cents, total = 0;
 
 	if (argc > 2 || argc == 1)
-	{
-		printf("Error\n");
-		return (1);
-	}
+	{printf("Error\n");
+	return (1);}
 
 	if (*argv[1] == '-')
 	{
