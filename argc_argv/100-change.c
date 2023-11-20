@@ -10,7 +10,7 @@
 *Return: total coins needed
 */
 
-int mod(int cents, int mod, int small)
+int module(int cents, int mod, int small)
 {
 	int r[5], i, modp;
 	int coins[] = {25, 10, 5, 2, 1};
@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	total = mod(cents, mod, small);
+	total = module(cents, mod, small);
 	printf("%d\n", total);
 	return (0);
 }
