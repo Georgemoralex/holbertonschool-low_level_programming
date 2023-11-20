@@ -28,13 +28,13 @@ int main(int argc, char *argv[])
         return (0);
     }
 
+    cents = atoi(argv[1]);
+    smallest = cents;
+
     if (cents == 0)
     {
         return (0);
     }
-    
-    cents = atoi(argv[1]);
-    smallest = cents;
 
     while (mod != 0)
     {
