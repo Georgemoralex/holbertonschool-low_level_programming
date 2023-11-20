@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
     if (cents == 0)
     {
         printf("%d\n", total);
-        return (total);
+        return (0);
     }
 
     while (mod != 0)
@@ -75,5 +75,5 @@ int main(int argc, char *argv[])
         smallest = cents;
     }
     printf("%d\n", total);
-    return(total);
+    return(0);
 }
