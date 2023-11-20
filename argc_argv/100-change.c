@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-*mod - minimal number of coins for change
+*module - minimal number of coins for change
 *Description: prints min # of coins for change
 *@cents: integer with count of arguments supplied to the program
 *@mod: modulus from operation
@@ -16,25 +16,35 @@ int module(int cents, int mod, int small)
 	int coins[] = {25, 10, 5, 2, 1};
 	int t = 0;
 
-	while (mod != 0){
-		if (cents != 1){
-			for (i = 0; i < 5; i++){
+	while (mod != 0)
+	{
+		if (cents != 1)
+		{
+			for (i = 0; i < 5; i++)
+			{
 				r[i] = cents / coins[i];
-				if (r[i] < 1){
+				if (r[i] < 1)
+				{
 					r[i] = 0;}
-                                if (i == 0 && r[i] != 0){
+                                if (i == 0 && r[i] != 0)
+				{
 					small = r[i];
-					modp = i;}
-                                else{
-					if (r[i] < small && r[i] != 0){
-                                                small = r[i];
-                                                modp = i;}
+					modp = i;
+				}
+				else
+				{
+					if (r[i] < small && r[i] != 0)
+					{
+						small = r[i];
+						modp = i;
+					}
 				}
 			}
 		}
-		else{
+		else {
 			t += 1;
-			return (t);}
+			return (t);
+		}
 		mod = cents % coins[modp];
 		cents = mod;
 		t += r[modp];
@@ -58,8 +68,10 @@ int main(int argc, char *argv[])
 	int total = 0;
 
 	if (argc > 2 || argc == 1)
-	{printf("Error\n");
-	return (1);}
+	{
+		printf("Error\n");
+		return (1);
+	}
 
 	if (*argv[1] == '-')
 	{
