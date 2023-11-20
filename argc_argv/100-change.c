@@ -12,9 +12,8 @@
 
 int module(int cents, int mod, int small)
 {
-	int r[5], i, modp;
+	int r[5], i, modp, t = 0;
 	int coins[] = {25, 10, 5, 2, 1};
-	int t = 0;
 
 	while (mod != 0)
 	{
