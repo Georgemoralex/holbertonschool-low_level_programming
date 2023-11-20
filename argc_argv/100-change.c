@@ -16,9 +16,6 @@ int main(int argc, char *argv[])
     int i, mod = 1, modOp, smallest, cents;
     int total = 0;
 
-    cents = atoi(argv[1]);
-    smallest = cents;
-  
     if (argc > 2 || argc == 1)
     {
         printf("Error\n");
@@ -36,6 +33,9 @@ int main(int argc, char *argv[])
         return (0);
     }
     
+    cents = atoi(argv[1]);
+    smallest = cents;
+
     while (mod != 0)
     {
         if (cents != 1)
