@@ -2,6 +2,46 @@
 #include <stdlib.h>
 
 /**
+*mod - minimal number of coins for change
+*Description: prints min # of coins for change
+*@cents: integer with count of arguments supplied to the program
+*@mod: modulus from operation
+*@small: smallest number from result array
+*Return: total coins needed
+*/
+
+int mod(int cents, int mod, int small)
+{
+	int r[5], i, modp, int coins[] = {25, 10, 5, 2, 1}, t = 0;
+
+	while (mod != 0){
+		if (cents != 1){
+			for (i = 0; i < 5; i++){
+				r[i] = cents / coins[i];
+				if (r[i] < 1){
+					r[i] = 0;}
+                                if (i == 0 && r[i] != 0){
+					small = r[i];
+					modp = i;}
+                                else{
+					if (r[i] < small && r[i] != 0){
+                                                small = r[i];
+                                                modp = i;}
+				}
+			}
+		}
+		else{
+			t += 1;
+			return (t);}
+		mod = cents % coins[modp];
+		cents = mod;
+		t += r[modp];
+		small = cents;
+	}
+	return (t);
+}
+
+/**
 *main - minimal number of coins for change
 *Description: prints min # of coins for change
 *@argc: integer with count of arguments supplied to the program
@@ -11,7 +51,7 @@
 
 int main(int argc, char *argv[])
 {
-	int coins[] = {25, 10, 5, 2, 1}, r[5], i, mod = 1, modp, small, cents, t = 0;
+	int  mod = 1, small, cents, total = 0;
 
 	if (argc > 2 || argc == 1)
 	{printf("Error\n");
@@ -22,6 +62,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
+	
 	cents = atoi(argv[1]);
 	small = cents;
 
@@ -31,43 +72,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	while (mod != 0)
-	{
-		if (cents != 1)
-		{
-			for (i = 0; i < 5; i++)
-			{
-				r[i] = cents / coins[i];
-				if (r[i] < 1)
-				{
-					r[i] = 0;
-				}
-				if (i == 0 && r[i] != 0)
-				{
-					small = r[i];
-					modp = i;
-				}
-				else
-				{
-					if (r[i] < small && r[i] != 0)
-					{
-						small = r[i];
-						modp = i;
-					}
-				}
-			}
-		}
-		else
-		{
-			t += 1;
-			printf("%d\n", t);
-			return (0);
-		}
-		mod = cents % coins[modp];
-		cents = mod;
-		t += r[modp];
-		small = cents;
-	}
-	printf("%d\n", t);
+	total = mod(cents, mod, small);
+	printf("%d\n", total);
 	return (0);
 }
