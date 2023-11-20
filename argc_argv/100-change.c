@@ -12,7 +12,9 @@
 
 int mod(int cents, int mod, int small)
 {
-	int r[5], i, modp, int coins[] = {25, 10, 5, 2, 1}, t = 0;
+	int r[5], i, modp;
+	int coins[] = {25, 10, 5, 2, 1};
+	int t = 0;
 
 	while (mod != 0){
 		if (cents != 1){
