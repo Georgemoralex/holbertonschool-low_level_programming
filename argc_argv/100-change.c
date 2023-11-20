@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int coins[] = {25, 10, 5, 2, 1}, result[5], i, mod = 1, modOp, smallest, cents, total = 0;
+	int coins[] = {25, 10, 5, 2, 1}, r[5], i, mod = 1, modp, small, cents, t = 0;
 
 	if (argc > 2 || argc == 1)
 	{printf("Error\n");
@@ -23,11 +23,11 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 	cents = atoi(argv[1]);
-	smallest = cents;
+	small = cents;
 
 	if (cents == 0)
 	{
-		printf("%d\n", total);
+		printf("%d\n", t);
 		return (0);
 	}
 
@@ -37,37 +37,37 @@ int main(int argc, char *argv[])
 		{
 			for (i = 0; i < 5; i++)
 			{
-				result[i] = cents / coins[i];
-				if (result[i] < 1)
+				r[i] = cents / coins[i];
+				if (r[i] < 1)
 				{
-					result[i] = 0;
+					r[i] = 0;
 				}
-				if (i == 0 && result[i] != 0)
+				if (i == 0 && r[i] != 0)
 				{
-					smallest = result[i];
-					modOp = i;
+					small = r[i];
+					modp = i;
 				}
 				else
 				{
-					if (result[i] < smallest && result[i] != 0)
+					if (r[i] < small && r[i] != 0)
 					{
-						smallest = result[i];
-						modOp = i;
+						small = r[i];
+						modp = i;
 					}
 				}
 			}
 		}
 		else
 		{
-			total += 1;
+			t += 1;
 			printf("%d\n", total);
 			return (0);
 		}
-		mod = cents % coins[modOp];
+		mod = cents % coins[modp];
 		cents = mod;
-		total += result[modOp];
-		smallest = cents;
+		t += r[modp];
+		small = cents;
 	}
-	printf("%d\n", total);
+	printf("%d\n", t);
 	return (0);
 }
