@@ -10,7 +10,7 @@
 */
 
 int main(int argc, char *argv[])
-{   
+{
     int coins[] = {25, 10, 5, 2, 1};
     int result[5];
     int i, mod = 1, modOp, smallest, cents, total = 0;
@@ -20,13 +20,12 @@ int main(int argc, char *argv[])
         printf("Error\n");
         return (1);
     }
-    
+
     if (*argv[1] == '-')
     {
         printf("0\n");
         return (0);
     }
-
     cents = atoi(argv[1]);
     smallest = cents;
 
@@ -42,7 +41,7 @@ int main(int argc, char *argv[])
         {
             for (i = 0; i < 5; i++)
             {
-                result[i] = cents / coins[i];  
+                result[i] = cents / coins[i];
                 if (result[i] < 1)
                 {
                     result[i] = 0;
