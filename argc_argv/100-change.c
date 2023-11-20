@@ -25,8 +25,9 @@ int module(int cents, int mod, int small)
 				r[i] = cents / coins[i];
 				if (r[i] < 1)
 				{
-					r[i] = 0;}
-                                if (i == 0 && r[i] != 0)
+					r[i] = 0;
+				}
+				if (i == 0 && r[i] != 0)
 				{
 					small = r[i];
 					modp = i;
@@ -41,7 +42,8 @@ int module(int cents, int mod, int small)
 				}
 			}
 		}
-		else {
+		else
+		{
 			t += 1;
 			return (t);
 		}
@@ -78,7 +80,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	
+
 	cents = atoi(argv[1]);
 	small = cents;
 
