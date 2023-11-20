@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int coins[] = {25, 10, 5, 2, 1}, result[5], mod = 1, modOp, smallest, cents, total = 0;
+	int coins[] = {25, 10, 5, 2, 1}, result[5], i, mod = 1, modOp, smallest, cents, total = 0;
 
 	if (argc > 2 || argc == 1)
 	{printf("Error\n");
