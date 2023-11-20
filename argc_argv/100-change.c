@@ -67,7 +67,6 @@ int main(int argc, char *argv[])
       cents = mod;
       total += result[modOp];
       smallest = cents;
-      //printf("%d\n", total);
-      return(total);
     }
+    return(total);
 }
