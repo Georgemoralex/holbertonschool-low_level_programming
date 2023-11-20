@@ -41,39 +41,39 @@ int main(int argc, char *argv[])
 	{
 		if (cents != 1)
 		{
-			for (i = 0; i < 5; i++)
-			{
-				result[i] = cents / coins[i];
-				if (result[i] < 1)
-				{
-					result[i] = 0;
-				}
-				if (i == 0 && result[i] != 0)
-				{
-					smallest = result[i];
-					modOp = i;
-				}
-				else
-				{
-					if (result[i] < smallest && result[i] != 0)
-					{
-						smallest = result[i];
-						modOp = i;
-					}
-				}
-			}
+		for (i = 0; i < 5; i++)
+		{
+		result[i] = cents / coins[i];
+		if (result[i] < 1)
+		{
+		result[i] = 0;
+		}
+		if (i == 0 && result[i] != 0)
+		{
+		smallest = result[i];
+		modOp = i;
 		}
 		else
 		{
-			total += 1;
-			printf("%d\n", total);
-			return (0);
+		if (result[i] < smallest && result[i] != 0)
+		{
+		smallest = result[i];
+		modOp = i;
 		}
-		mod = cents % coins[modOp];
-		cents = mod;
-		total += result[modOp];
-		smallest = cents;
+		}
+		}
+		}
+		else
+		{
+		total += 1;
+		printf("%d\n", total);
+		return (0);
+		}
+	mod = cents % coins[modOp];
+	cents = mod;
+	total += result[modOp];
+	smallest = cents;
 	}
 	printf("%d\n", total);
-	return(0);
+	return (0);
 }
