@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 		else
 		{
 			t += 1;
-			printf("%d\n", total);
+			printf("%d\n", t);
 			return (0);
 		}
 		mod = cents % coins[modp];
