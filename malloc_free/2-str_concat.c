@@ -15,7 +15,7 @@ char *str_concat(char *s1, char *s2)
     int i = 0, j = 0, t = 0;
     int k, l;
 
-    printf("%s", s2[0]);
+    printf("%d", s2[0]);
     if (s1 == NULL)
     {
         s1[0] = '\0';
