@@ -13,19 +13,20 @@ char *str_concat(char *s1, char *s2)
 {
     
     int t = 1;
-    int r = 10;
+    int r = 2;
+    int q = 3;
 
-    printf("%d", t);
+    printf("%d\n", t);
     if (s1 == NULL)
     {
         s1 = "";
-        printf("%d", t);
+        printf("%d\n", r);
     }
 
     if (s2 == NULL)
     {
         s2 = "";
-        printf("%d", r);
+        printf("%d\n", q);
     }
 
 
