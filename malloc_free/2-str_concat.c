@@ -12,17 +12,16 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *array;
-    char _s1, _s2;
     int i = 0, j = 0, t = 0;
     int k, l;
 
     if (s1 == NULL)
     {
-        _s1 = "";
+        *s1 = "";
     }
     if (s2 == NULL)
     {
-        _s2 == "";
+        *s2 = "";
     }
 
     while (*(s1 + i) != '\0')
@@ -50,7 +49,7 @@ char *str_concat(char *s1, char *s2)
     
     for (l = 0; l < j; l++)
     {
-        array[k] = s2[];
+        array[k] = s2[l];
         k++;
     }
     array[k] = '\0';
