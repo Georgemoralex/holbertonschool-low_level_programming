@@ -38,14 +38,8 @@ char *str_concat(char *s1, char *s2)
     
     t = i + j;
 
-    array = malloc((t + 1) * sizeof(char));
-
-    if (array == NULL)
-    {
-        return (NULL);
-    }
-
-    return (array);
+    
+    return (t);
 
 
 }
