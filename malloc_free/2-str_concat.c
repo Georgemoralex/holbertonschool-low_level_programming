@@ -13,7 +13,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *array;
     int i = 0, j = 0, t = 0;
-    int k, l;
+   
 
     printf("%d", s2[0]);
     printf("%d", s1[0]);
@@ -45,7 +45,7 @@ char *str_concat(char *s1, char *s2)
         return (NULL);
     }
 
-   
+    return (array);
 
 
 }
