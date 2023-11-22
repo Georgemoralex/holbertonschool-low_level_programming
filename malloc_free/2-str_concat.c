@@ -15,35 +15,30 @@ char *str_concat(char *s1, char *s2)
     int i = 0, j = 0, t = 0;
     int k, l;
 
-    int w = 1;
-    int y = 2;
    
 
-    
     if (s1 == NULL)
     {
         s1 = "";
-        printf("%d\n", w);
     }
 
     if (s2 == NULL)
     {
         s2 = "";
-        printf("%d\n", y);
     }
-
-    printf("%s\n%s\n", s1, s2);
 
     while (*(s1 + i) != '\0')
     {
         i++;
     }
+    
     while (*(s2 + j) != '\0')
     {
         j++;
     }
 
     t = i + j;
+    
     array = malloc((t + 1) * sizeof(char));
 
     if (array == NULL)
