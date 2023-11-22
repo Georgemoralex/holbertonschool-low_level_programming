@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stddef.h>
+#include <stdlib.h>
 /**
 *create_array - function that creates an array
 *Description: creates an array and initializes with an specific char
@@ -11,8 +12,9 @@
 char *create_array(unsigned int size, char c)
 {
 	char *array;
+    int i;
     
-    if (size = 0)
+    if (size == 0)
     {
         return (NULL);
     }
