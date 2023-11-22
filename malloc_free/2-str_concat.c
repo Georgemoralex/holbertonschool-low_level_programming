@@ -45,19 +45,7 @@ char *str_concat(char *s1, char *s2)
         return (NULL);
     }
 
-    for (k = 0; k < i; k++)
-    {
-        array[k] = s1[k];
-    }
-    
-    for (l = 0; l < j; l++)
-    {
-        array[k] = s2[l];
-        k++;
-    }
-    array[k] = '\0';
-
-    return (array);
+   
 
 
 }
