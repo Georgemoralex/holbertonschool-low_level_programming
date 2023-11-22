@@ -14,6 +14,7 @@ char *str_concat(char *s1, char *s2)
     
    int t = 1;
 
+    printf("%d", t);
     printf("%d", s2[0]);
     printf("%d", s1[0]);
 
