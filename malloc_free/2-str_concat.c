@@ -11,7 +11,6 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-	char *array;
     int i = 0, j = 0, t = 0;
    
 
@@ -39,7 +38,7 @@ char *str_concat(char *s1, char *s2)
     t = i + j;
 
     
-    return (t);
+    return (0);
 
 
 }
