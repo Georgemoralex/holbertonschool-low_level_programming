@@ -14,19 +14,19 @@ char *str_concat(char *s1, char *s2)
     
     int t = 1;
     int r = 2;
-    int q = 3;
+   
 
-    printf("%d\n", t);
+    
     if (s1 == NULL)
     {
         s1 = "";
-        printf("%d\n", r);
+        printf("%d\n", t);
     }
 
     if (s2 == NULL)
     {
         s2 = "";
-        printf("%d\n", q);
+        printf("%d\n", r);
     }
 
 
