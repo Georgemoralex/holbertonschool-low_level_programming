@@ -29,6 +29,8 @@ char *str_concat(char *s1, char *s2)
         printf("%d\n", r);
     }
 
+    printf("%s\n%s\n", s1, s2);
+
 
   
 
