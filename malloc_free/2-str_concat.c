@@ -9,7 +9,7 @@
 *@s2: 2nd string
 *Return: a pointer to the concatenation
 */
-char *str_concat(char *s1, char *s2);
+char *str_concat(char *s1, char *s2)
 {
 	char *array;
     char _s1, _s2;
