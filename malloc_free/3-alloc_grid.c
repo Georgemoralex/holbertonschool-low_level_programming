@@ -3,7 +3,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
-*alloc_grid - 
+*alloc_grid - allocates memory for 2d array
 *Description: allocate memory for a 2D array give a width and a height
 *@width: width of the array
 *@height: height of the array
@@ -13,10 +13,16 @@ int **alloc_grid(int width, int height)
 {
     int i;
 
-    int **array = malloc(sizeof(int *) * width);
-
     if (width == 0 || height == 0)
     {
+        return (NULL);
+    }
+    
+    int **array = malloc(sizeof(int *) * width);
+
+    if (array == NULL)
+    {
+        free(array);
         return (NULL);
     }
 
@@ -25,11 +31,5 @@ int **alloc_grid(int width, int height)
         array[i] = malloc(sizeof(int) * width);
     }
 
-    if (array == NULL)
-    {
-        free(array);
-        return (NULL);
-    }
-    
     return (array);
 }
