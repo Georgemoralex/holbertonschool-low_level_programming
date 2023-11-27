@@ -44,7 +44,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
         }
         else
         {
-            break;  // Stop copying when we've reached the end of s2
+            break;
         }
     }
     conc[i] = '\0';
