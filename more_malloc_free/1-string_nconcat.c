@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
 *string_nconcat - Write a function that concatenates two strings.
-*Description: The returned pointer shall point to a newly allocated space in memory
+*Description: returned pointer shall point to a newly allocated space in mem
 *@s1: string 1
 *@s2: string 2
 *@n: n bytes of the second string
@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	conc = malloc(length_conc + 1);
 	if (conc == NULL)
 		return (NULL);
-	for (i =0; i < length_conc; i++)
+	for (i = 0; i < length_conc; i++)
 	{
 		if (i < length_s1)
 			conc[i] = s1[i];
