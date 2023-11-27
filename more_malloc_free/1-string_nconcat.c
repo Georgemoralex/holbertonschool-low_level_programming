@@ -27,21 +27,26 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     
     length_conc = length_s1 + length_s2;
     conc = malloc(length_conc + 1);
-    
+
     if (conc == NULL)
     {
         return (NULL);
     }
     for (i =0; i < length_conc; i++)
+    {
         if (i < length_s1)
         {
             conc[i] = s1[i];
         }
-        else
+        else if (i - length_s1 < length_s2)
         {
             conc[i] = s2[i - length_s1];
         }
-    
+        else
+        {
+            break;  // Stop copying when we've reached the end of s2
+        }
+    }
     conc[i] = '\0';
     return (conc);
 }
