@@ -1,8 +1,9 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 #define __FILE__
 
-void main(void)
+int main(void)
 {
     printf("%s", __FILE__);
 }
