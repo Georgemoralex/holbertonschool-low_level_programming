@@ -1,6 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 #include "dog.h"
+#include <stddef.h>
 
 /**
  *init_dog - Write a function that initialize a variable of type struct dog
