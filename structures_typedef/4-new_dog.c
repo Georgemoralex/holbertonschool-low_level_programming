@@ -31,11 +31,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 		length_owner++;
 	pointerD->name = malloc(length_name + 1);
 	pointerD->owner = malloc(length_owner + 1);
-	if (pointerD->name == NULL || pointerD->owner == NULL) 
+	if (pointerD->name == NULL || pointerD->owner == NULL) {
 		free(pointerD->owner);
 		free(pointerD->name);
 		free(pointerD);
 		return (NULL);
+	}
 	for (i = 0; i < length_name; i++) 
 		pointerD->name[i] = name[i];
 	pointerD->name[i] = '\0';
