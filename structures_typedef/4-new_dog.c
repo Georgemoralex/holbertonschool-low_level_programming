@@ -1,5 +1,5 @@
 #ifndef poppy
-#define DOG_H
+#define poppy
 #include "dog.h"
 #include <stdlib.h>
 #include <stddef.h>
@@ -13,36 +13,49 @@
 *Return: pointer to dog_t or NULL if it fails
 */
 
-dog_t *new_dog(char *name, float age, char *owner)
-{
-	dog_t *pointerD;
-	int i, length_name, length_owner;
+dog_t *new_dog(char *name, float age, char *owner) {
+    dog_t *pointerD;
+    int i, length_name, length_owner;
 
-	pointerD = malloc(sizeof(*pointerD));
-	if (pointerD == NULL || !(name) || !(owner))
-	{
-		free(pointerD);
-		return (NULL);
-	}
-	for (length_name = 0; name[length_name]; length_name++)
-	for (length_owner = 0; owner[length_owner]; length_owner++)
-	pointerD->name = malloc(length_name + 1);
-	pointerD->owner = malloc(length_owner + 1);
-	if (!(pointerD->name) || !(pointerD->owner))
-	{
-		free(pointerD->owner);
-		free(pointerD->name);
-		free(pointerD);
-		return (NULL);
-	}
-	for (i = 0; i < length_name; i++)
-		pointerD->name[i] = name[i];
-	pointerD->name[i] = '\0';
-	pointerD->age = age;
-	for (i = 0; i < length_owner; i++)
-		pointerD->owner[i] = owner[i];
-	pointerD->owner[i] = '\0';
-	return (pointerD);
+    pointerD = malloc(sizeof(dog_t));
+    if (pointerD == NULL || name == NULL || owner == NULL) {
+        free(pointerD);
+        return NULL;
+    }
+
+    length_name = 0;
+    while (name[length_name] != '\0') {
+        length_name++;
+    }
+
+    length_owner = 0;
+    while (owner[length_owner] != '\0') {
+        length_owner++;
+    }
+
+    pointerD->name = malloc(length_name + 1);
+    pointerD->owner = malloc(length_owner + 1);
+
+    if (pointerD->name == NULL || pointerD->owner == NULL) {
+        free(pointerD->owner);
+        free(pointerD->name);
+        free(pointerD);
+        return NULL;
+    }
+
+    for (i = 0; i < length_name; i++) {
+        pointerD->name[i] = name[i];
+    }
+    pointerD->name[i] = '\0';
+
+    pointerD->age = age;
+
+    for (i = 0; i < length_owner; i++) {
+        pointerD->owner[i] = owner[i];
+    }
+    pointerD->owner[i] = '\0';
+
+    return pointerD;
 }
 
 #endif
