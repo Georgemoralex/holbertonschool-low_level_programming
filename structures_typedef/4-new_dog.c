@@ -1,5 +1,5 @@
-#ifndef DOG
-#define DOG
+#ifndef DOG_NEW
+#define DOG_NEW
 #include "dog.h"
 #include <stdlib.h>
 #include <stddef.h>
