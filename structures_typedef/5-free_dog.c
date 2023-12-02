@@ -5,7 +5,7 @@
 #include <stddef.h>
 
 /**
-*new_dog - function to free dogs
+*free_dog - function to free dogs
 *Description: function to free all fields
 *@d: dog_t struct
 *Return: void
