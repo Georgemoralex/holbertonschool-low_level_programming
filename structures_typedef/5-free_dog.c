@@ -1,5 +1,5 @@
-#ifndef DOG
-#define DOG
+#ifndef DOG_FREE
+#define DOG_FREE
 #include "dog.h"
 #include <stdlib.h>
 #include <stddef.h>
