@@ -1,5 +1,5 @@
-#ifndef poppy
-#define poppy
+#ifndef DOG
+#define DOG
 #include "dog.h"
 #include <stdlib.h>
 #include <stddef.h>
