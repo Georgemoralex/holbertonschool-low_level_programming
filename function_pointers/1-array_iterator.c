@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 #include <stdlib.h>
 /**
-*print_name - function pointer 
+*array_iterator - function pointer 
 *Description: performs the function that it is pointed to
 *@array: pointer to an array
 *@size: size of the array
@@ -16,7 +16,7 @@ size_t i;
 
 if (size <= 0 || array == NULL)
     exit(1);
-for (i = 0; i <= size; i++)
+for (i = 0; i < size; i++)
     (*action)(array[i]);
 
 }
