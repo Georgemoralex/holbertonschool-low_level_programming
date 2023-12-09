@@ -20,7 +20,7 @@ if (array == NULL || cmp == NULL)
 if (size <= 0)
     return (-1);
 
-while ((c = 0))
+while (c == 0)
 {
     c = (*cmp)(array[i]);
     i++;
