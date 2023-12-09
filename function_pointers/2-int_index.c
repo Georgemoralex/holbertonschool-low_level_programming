@@ -18,10 +18,12 @@ int c = 0;
 if (array == NULL || cmp == NULL || size <= 0)
     return (-1);
 
-while (c == 0 || i < 20)
+while (c == 0)
 {
     c = (*cmp)(array[i]);
     i++;
+    if (i >= 20)
+        return (i - 1);
 }
 return (i - 1);
 }
