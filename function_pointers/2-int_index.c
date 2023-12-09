@@ -1,6 +1,6 @@
+#include <stddef.h>
 #include "function_pointers.h"
 #include <stdlib.h>
-#include <stddef.h>
 /**
 *int_index - searchs an integer in an array
 *Description: returns array position that meets criteria
