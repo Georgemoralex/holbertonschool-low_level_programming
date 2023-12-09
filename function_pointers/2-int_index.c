@@ -18,7 +18,7 @@ int c = 0;
 if (array == NULL || cmp == NULL || size <= 0)
     return (-1);
 
-while (c == 0 || i < (size))
+while (c == 0 && i < (size))
 {
     c = (*cmp)(array[i]);
     i++;
