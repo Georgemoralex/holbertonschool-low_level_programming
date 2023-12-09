@@ -25,5 +25,5 @@ while ((c = 0))
     c = (*cmp)(array[i]);
     i++;
 }
-return (i);
+return (i - 1);
 }
