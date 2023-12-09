@@ -22,7 +22,7 @@ while (c == 0)
 {
     c = (*cmp)(array[i]);
     i++;
-    if (i >= size)
+    if (i >= (size -1))
         return (-1);
 }
 return (i - 1);
