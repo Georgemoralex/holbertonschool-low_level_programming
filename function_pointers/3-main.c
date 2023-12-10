@@ -18,15 +18,10 @@ if (argc != 4)
 	printf("Error\n");
 	exit(98);
 }
-if (argv[2][1] != '\0' ||
-	(argv[2][0] != '+' &&
-	 argv[2][0] != '-' &&
-	 argv[2][0] != '*' &&
-	 argv[2][0] != '/' &&
-	 argv[2][0] != '%'))
+if (argv[2][1] && get_op_func(argv[2]) == NULL)
 {
-		printf("Error\n");
-		exit(99);
+	printf("Error\n");
+	exit(99);
 }
 if (atoi(argv[3]) == 0)
 {
