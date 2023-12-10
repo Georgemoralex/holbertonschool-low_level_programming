@@ -23,5 +23,7 @@ while (c == 0 && i < (size))
     c = (*cmp)(array[i]);
     i++;
 }
+if (c == 0)
+    return (-1);
 return (i - 1);
 }
