@@ -23,10 +23,10 @@ if (argv[2][1] != '\0' || (argv[2][0] != '+' && argv[2][0] != '-'))
 	printf("Error\n");
 	exit(99);
 }
-if (argv[2][0] != '*' && argv[2][0] != '/' && argv[2][0] != '%')
+if (argv[2][1] != '\0' || (argv[2][0] != '*' && argv[2][0] != '/' && argv[2][0] != '%'))
 {
-		printf("Error\n");
-		exit(99);
+	printf("Error\n");
+	exit(99);
 }
 calc = get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3]));
 printf("%d\n", calc);
