@@ -16,14 +16,14 @@ int i = 0;
 int c = 0;
 
 if (array == NULL || cmp == NULL || size <= 0)
-    return (-1);
+	return (-1);
 
 while (c == 0 && i < (size))
 {
-    c = (*cmp)(array[i]);
-    i++;
+	c = (*cmp)(array[i]);
+	i++;
 }
 if (c == 0)
-    return (-1);
+	return (-1);
 return (i - 1);
 }
