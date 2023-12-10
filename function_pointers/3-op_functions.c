@@ -52,5 +52,5 @@ return ((b != 0) ? a / b : 0);
 *Return: integer with result
 */
 int op_mod(int a, int b) {
-return (a % b);
+return ((b != 0) ? a % b : 0);
 }

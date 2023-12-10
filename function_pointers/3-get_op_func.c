@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include "3-calc.h"
 /**
-*op_add - addition
-*Description: addition
-*@a: 1st integer
-*@b: 2nd integer
+*get_op_func - checks the operator
+*Description: checks the operator
+*@s: 1st integer
 *Return: integer with result
 */
 int (*get_op_func(char *s))(int, int) {
