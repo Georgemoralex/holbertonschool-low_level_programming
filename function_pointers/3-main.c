@@ -47,6 +47,6 @@ if (atoi(argv[3]) == 0) {
     }
 calc = get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3]));
 printf("%d\n", calc);
-return(calc);
+return(0);
 
 }
