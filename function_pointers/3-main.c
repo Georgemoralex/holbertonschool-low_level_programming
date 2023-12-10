@@ -8,6 +8,7 @@
 *@b: 2nd integer
 *Return: integer with result
 */
+
 int main(int argc, char *argv[]) {
     
 if (argc != 4) {

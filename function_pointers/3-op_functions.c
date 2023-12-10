@@ -12,7 +12,7 @@ return (a + b);
 }
 
 /**
-*op_add - substraction
+*op_sub - substraction
 *Description: substraction
 *@a: 1st integer
 *@b: 2nd integer
@@ -23,7 +23,7 @@ return (a - b);
 }
 
 /**
-*op_add - multiplication
+*op_mul - multiplication
 *Description: multiplication
 *@a: 1st integer
 *@b: 2nd integer
@@ -34,7 +34,7 @@ return (a * b);
 }
 
 /**
-*op_add - division
+*op_div - division
 *Description: division
 *@a: 1st integer
 *@b: 2nd integer
@@ -45,7 +45,7 @@ return ((b != 0) ? a / b : 0);
 }
 
 /**
-*op_add - modulus
+*op_mod - modulus
 *Description: modulus
 *@a: 1st integer
 *@b: 2nd integer
