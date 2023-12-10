@@ -4,9 +4,9 @@
 /**
 *main - main function
 *Description: selects arithmetic oper and performs it using func pointer
-*@a: 1st integer
-*@b: 2nd integer
-*Return: integer with result
+*@argc: number of args
+*@argv: actual value of args
+*Return: 0 if success
 */
 
 int main(int argc, char *argv[]) {
