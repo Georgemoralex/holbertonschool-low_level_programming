@@ -10,7 +10,9 @@
 */
 
 int main(int argc, char *argv[]) {
-    
+
+int calc;
+
 if (argc != 4) {
         _putchar(69);
         _putchar(114);
@@ -43,8 +45,8 @@ if (atoi(argv[3]) == 0) {
         _putchar(10);
         exit(100);
     }
-
-printf(get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3])));
-return(get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3])));
+calc = get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3]));
+printf(calc);
+return(calc);
 
 }
