@@ -7,7 +7,8 @@
 *@b: 2nd integer
 *Return: integer with result
 */
-int op_add(int a, int b) {
+int op_add(int a, int b)
+{
 return (a + b);
 }
 
@@ -18,7 +19,8 @@ return (a + b);
 *@b: 2nd integer
 *Return: integer with result
 */
-int op_sub(int a, int b) {
+int op_sub(int a, int b)
+{
 return (a - b);
 }
 
@@ -29,7 +31,8 @@ return (a - b);
 *@b: 2nd integer
 *Return: integer with result
 */
-int op_mul(int a, int b) {
+int op_mul(int a, int b)
+{
 return (a * b);
 }
 
@@ -40,7 +43,8 @@ return (a * b);
 *@b: 2nd integer
 *Return: integer with result
 */
-int op_div(int a, int b) {
+int op_div(int a, int b)
+{
 return ((b != 0) ? a / b : 0);
 }
 
@@ -51,6 +55,7 @@ return ((b != 0) ? a / b : 0);
 *@b: 2nd integer
 *Return: integer with result
 */
-int op_mod(int a, int b) {
+int op_mod(int a, int b)
+{
 return ((b != 0) ? a % b : 0);
 }
