@@ -17,8 +17,7 @@ int (*get_op_func(char *s))(int, int) {
         {"%", op_mod},
         {NULL, NULL}
     };
-    if (s == NULL)
-        return (NULL);
+    
     i = 0;
     while (i < 10)
 	{
