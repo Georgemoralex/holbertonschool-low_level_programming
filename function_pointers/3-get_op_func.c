@@ -20,7 +20,7 @@ int (*get_op_func(char *s))(int, int) {
     if (s == NULL)
         return (NULL);
     i = 0;
-    while (*s != '\0' && *s == ops[i].op[i] && ops[i].op != NULL) {
+    while (ops[i].op != NULL && *s != '\0' && *s == ops[i].op[0]) {
         i++;
     }
     return (ops[i].f);
