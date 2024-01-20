@@ -8,7 +8,7 @@
 
  void print_binary(unsigned long int n)
  {
-    float num_f;
+    float num_f, remainder;
     int num_i;
 
     num_i = num_f = n;
@@ -19,8 +19,8 @@
         num_i *= .5;
         remainder = num_f - num_i;
         if (remainder == 0)
-            _putchar('48');
+            _putchar(48);
         else
-            _putchar('49');
+            _putchar(49);
     }
  }
