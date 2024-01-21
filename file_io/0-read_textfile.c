@@ -19,11 +19,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	while (letters > 0 && read(fd, &c, 1) == 1)
 	{
-		if (write(STDERR_FILENO, &c, 1) == -1)
+		if (_putchar(c) == -1)
 		{
-            close(fd);
-            return 0;
-        }
+			close(fd);
+			return (0);
+		}
 		total_bytes_read++;
 		letters--;
 	}
