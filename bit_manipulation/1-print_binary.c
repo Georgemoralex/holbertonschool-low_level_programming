@@ -31,5 +31,4 @@
 		_putchar(digit + '0');
 	}
  }
- _putchar(10);
  }
