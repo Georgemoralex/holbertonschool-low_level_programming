@@ -9,9 +9,9 @@
 void print_binary(unsigned long int n)
 {
 	int length = 0;
-	int x;
-
+	int x, bit;
 	unsigned long int temp = n;
+
 	while (temp > 0)
 	{
 		temp >>= 1;
@@ -25,7 +25,7 @@ void print_binary(unsigned long int n)
 	{
 		for (x = length - 1; x >= 0; x--)
 		{
-			int bit = (n >> x) & 1;
+			bit = (n >> x) & 1;
 			_putchar(bit + '0');
 		}
 	}
