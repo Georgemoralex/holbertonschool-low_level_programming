@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * get_bit - prints specific bit given an index
+ * @n: bin number
+ * @index: index to print
+ * Return: value of bit at index or negative value if error
+ */
+
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int mask;
