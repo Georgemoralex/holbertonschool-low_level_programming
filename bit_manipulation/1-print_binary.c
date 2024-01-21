@@ -8,9 +8,6 @@
 
 void print_binary(unsigned long int n)
 {
-    int remainder;
-    unsigned long int binary_result = 0;
-    int place_value = 1;
     int length = 0;
     int x;
 
