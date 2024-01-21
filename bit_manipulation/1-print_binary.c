@@ -6,34 +6,28 @@
  * Return: converted number.
  */
 
- void print_binary(unsigned long int n)
- {
-	int remainder;
-	unsigned long int binary_result = 0;
+void print_binary(unsigned long int n)
+{
+    int remainder;
+    unsigned long int binary_result = 0;
     int place_value = 1;
-	int length = 0;
-	int x, digit;
-	int leading_zeros = 1;
+    int length = 0;
+    int x;
 
-	while (n > 0)
-	{
-		remainder = n & 1;
-		binary_result |= remainder * place_value;
-		place_value <<= 1;
-		n >>= 1;
-		length += 1;
+    unsigned long int temp = n;
+    while (temp > 0)
+    {
+        temp >>= 1;
+        length += 1;
+    }
 
-		if (n == 0 && leading_zeros) {
-            leading_zeros = 0;
-		}
-	}
-	if (length == 0) {
-		_putchar('0');
+    if (length == 0) {
+        _putchar('0');
     } else {
-	for (x = (length - 1); x >= 0; x--)
-	{
-		digit = (binary_result >> x) & 1;
-		_putchar(digit + '0');
-	}
- }
- }
+        for (x = length - 1; x >= 0; x--)
+        {
+            int bit = (n >> x) & 1;
+            _putchar(bit + '0');
+        }
+    }
+}
