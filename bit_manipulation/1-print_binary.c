@@ -9,8 +9,8 @@
  void print_binary(unsigned long int n)
  {
 	int remainder;
-	int binary_result = 0
-    int place_value = 1
+	int binary_result = 0;
+    int place_value = 1;
 
 	while (n > 0)
 	{
@@ -19,5 +19,5 @@
 		place_value <<= 1
 		n >>= 1
 	}
-	return binary_result
+	return binary_result;
  }
