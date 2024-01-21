@@ -22,6 +22,9 @@
 		n >>= 1;
 		length += 1;
 	}
+	if (length == 0) {
+		_putchar('0');
+    } else {
 	for (x = (length - 1); x >= 0; x--)
 	{
 		digit = (binary_result >> x) & 1;
