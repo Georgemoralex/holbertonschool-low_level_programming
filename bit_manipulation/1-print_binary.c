@@ -8,7 +8,7 @@
 
  void print_binary(unsigned long int n)
  {
-	while n > 0:
+	while (n > 0)
 	{
 		remainder = n & 1
 		binary_result |= remainder * place_value
