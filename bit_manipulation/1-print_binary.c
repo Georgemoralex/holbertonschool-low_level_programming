@@ -11,9 +11,8 @@
 	int remainder;
 	int binary_result = 0;
     int place_value = 1;
-	int y = 0;
 	int length = 0;
-	int x, y;
+	int x, y, digit;
 
 	while (n > 0)
 	{
@@ -27,6 +26,6 @@
 	for ((x = (length - n)), y = 0; x < 0 && y < length; x--, y++)
 	{
 		digit <<= (length - x);
-		digit >>= (y)
+		digit >>= y;
 	}
  }
