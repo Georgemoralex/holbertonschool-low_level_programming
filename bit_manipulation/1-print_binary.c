@@ -27,6 +27,6 @@
 	{
 		digit <<= (length - x);
 		digit >>= y;
-		_putchar(digit + '0');
+		_putchar(48);
 	}
  }
