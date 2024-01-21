@@ -12,6 +12,8 @@
 	int binary_result = 0;
     int place_value = 1;
 	int y = 0;
+	int length = 0;
+	int x, y;
 
 	while (n > 0)
 	{
@@ -19,10 +21,12 @@
 		binary_result |= remainder * place_value;
 		place_value <<= 1;
 		n >>= 1;
+		length += 1;
 	}
-	while (n[y] != '\0')
+	digit = binary_result;
+	for ((x = (length - n)), y = 0; x < 0 && y < length; x--, y++)
 	{
-		_putchar(n[y] + '0');
-		y += 1;
+		digit <<= (length - x);
+		digit >>= (y)
 	}
  }
