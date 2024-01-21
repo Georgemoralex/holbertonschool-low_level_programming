@@ -22,11 +22,9 @@
 		n >>= 1;
 		length += 1;
 	}
-	digit = binary_result;
-	for ((x = (length - n)), y = 0; x < 0 && y < length; x--, y++)
+	for (x = (length - 1); x >= 0; x--)
 	{
-		digit <<= (length - x);
-		digit >>= y;
-		_putchar(48);
+		digit = (binary_result >> x) & 1;
+		_putchar(digit + '0');
 	}
  }
