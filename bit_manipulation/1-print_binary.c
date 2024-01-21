@@ -13,6 +13,7 @@
     int place_value = 1;
 	int length = 0;
 	int x, digit;
+	int leading_zeros = 1;
 
 	while (n > 0)
 	{
@@ -21,6 +22,10 @@
 		place_value <<= 1;
 		n >>= 1;
 		length += 1;
+
+		if (n == 0 && leading_zeros) {
+            leading_zeros = 0;
+		}
 	}
 	if (length == 0) {
 		_putchar('0');
