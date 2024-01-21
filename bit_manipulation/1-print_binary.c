@@ -8,6 +8,10 @@
 
  void print_binary(unsigned long int n)
  {
+	int remainder;
+	int binary_result = 0
+    int place_value = 1
+
 	while (n > 0)
 	{
 		remainder = n & 1
