@@ -14,10 +14,10 @@
 
 	while (n > 0)
 	{
-		remainder = n & 1
-		binary_result |= remainder * place_value
-		place_value <<= 1
-		n >>= 1
+		remainder = n & 1;
+		binary_result |= remainder * place_value;
+		place_value <<= 1;
+		n >>= 1;
 	}
 	return binary_result;
  }
