@@ -8,19 +8,12 @@
 
  void print_binary(unsigned long int n)
  {
-    float num_f, remainder;
-    int num_i;
-
-    num_i = num_f = n;
-
-    while (num_i != 0)
-    {
-        num_f *= .5;
-        num_i *= .5;
-        remainder = num_f - num_i;
-        if (remainder == 0)
-            _putchar(48);
-        else
-            _putchar(49);
-    }
+	while n > 0:
+	{
+		remainder = n & 1
+		binary_result |= remainder * place_value
+		place_value <<= 1
+		n >>= 1
+	}
+	return binary_result
  }
