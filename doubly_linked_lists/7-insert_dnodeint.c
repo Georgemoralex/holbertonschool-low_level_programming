@@ -32,7 +32,20 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
             putchar('-');
             putchar('>');
             putchar(' ');
-            printf("%d\n", n);
+
+            /* Print each digit individually without recursion */
+            int divisor = 1;
+            while (n / divisor >= 10)
+                divisor *= 10;
+
+            while (divisor != 0)
+            {
+                putchar(n / divisor + '0');
+                n %= divisor;
+                divisor /= 10;
+            }
+
+            putchar('\n');
         }
         return new;
     }
@@ -56,5 +69,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
     return new;
 }
+
 
 
