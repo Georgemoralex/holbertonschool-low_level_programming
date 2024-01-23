@@ -9,46 +9,29 @@
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-    dlistint_t *new, *current;
+    dlistint_t *new_node, *current;
     unsigned int i;
-	int divisor = 1;
-	
+
     if (h == NULL)
         return NULL;
 
-    new = malloc(sizeof(dlistint_t));
-    if (new == NULL)
+    new_node = malloc(sizeof(dlistint_t));
+    if (new_node == NULL)
         return NULL;
 
-    new->n = n;
-    new->prev = NULL;
-    new->next = NULL;
+    new_node->n = n;
+    new_node->prev = NULL;
+    new_node->next = NULL;
 
     if (idx == 0)
     {
-        new = add_dnodeint(h, n);
-        if (new != NULL)
-        {
-            /* Print the arrow -> as part of the output using putchar */
-            _putchar('-');
-            _putchar('>');
-            _putchar(' ');
+        /* Insert at the beginning */
+        new_node->next = *h;
+        if (*h != NULL)
+            (*h)->prev = new_node;
+        *h = new_node;
 
-            /* Print each digit individually without recursion */
-            
-            while (n / divisor >= 10)
-                divisor *= 10;
-
-            while (divisor != 0)
-            {
-                _putchar(n / divisor + '0');
-                n %= divisor;
-                divisor /= 10;
-            }
-
-            _putchar('\n');
-        }
-        return new;
+        return new_node;
     }
 
     current = *h;
@@ -57,19 +40,21 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
     if (current == NULL)
     {
-        free(new);
+        /* Cannot insert beyond the end of the list */
+        free(new_node);
         return NULL;
     }
 
-    new->next = current->next;
-    new->prev = current;
+    /* Insert in the middle or at the end */
+    new_node->next = current->next;
+    new_node->prev = current;
     if (current->next != NULL)
-        current->next->prev = new;
+        current->next->prev = new_node;
+    current->next = new_node;
 
-    current->next = new;
-
-    return new;
+    return new_node;
 }
+
 
 
 
