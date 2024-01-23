@@ -52,5 +52,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
     current->next = new;
 
+    /* Print the arrow -> as part of the output */
+    printf("-> %d\n", n);
+
     return (new);
 }
