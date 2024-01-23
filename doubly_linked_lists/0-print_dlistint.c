@@ -12,10 +12,12 @@ size_t print_dlistint(const dlistint_t *h)
         int num = h->n;
         int divisor = 1;
 
-        if (count > 0) 
+        if (count > 0)
         {
+            _putchar('\n');
             _putchar('-');
             _putchar('>');
+            _putchar(' ');
         }
 
         while (num / divisor >= 10)
@@ -28,21 +30,21 @@ size_t print_dlistint(const dlistint_t *h)
             divisor /= 10;
         }
 
-        _putchar('\n');
         count++;
 
         h = h->next;
     }
 
-    if (count > 0)  
+    if (count > 0)
     {
+        _putchar('\n');
         _putchar('-');
         _putchar('>');
         _putchar(' ');
-        
     }
 
     return count;
 }
+
 
 
