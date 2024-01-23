@@ -27,7 +27,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		total_bytes_read++;
 		letters--;
 		if (total_bytes_read >= 100) {
-			break;  // Stop after printing the first 100 characters
+			break;
 		}
 	}
 	close(fd);
