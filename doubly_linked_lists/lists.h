@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio>
+
 
 /**
  * struct dlistint_s - doubly linked list
