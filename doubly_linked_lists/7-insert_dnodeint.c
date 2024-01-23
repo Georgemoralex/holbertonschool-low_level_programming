@@ -53,9 +53,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
     current->next = new;
 
     /* Print the arrow -> as part of the output using putchar */
-    putchar('-');
-    putchar('>');
-    putchar(' ');
+    _putchar('-');
+    _putchar('>');
+    _putchar(' ');
 
     /* Print each digit individually without recursion */
     int divisor = 1;
@@ -64,12 +64,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
     while (divisor != 0)
     {
-        putchar(n / divisor + '0');
+        _putchar(n / divisor + '0');
         n %= divisor;
         divisor /= 10;
     }
 
-    putchar('\n');
+    _putchar('\n');
 
     return (new);
 }
