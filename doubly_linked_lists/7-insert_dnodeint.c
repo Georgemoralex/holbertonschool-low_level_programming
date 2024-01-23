@@ -30,9 +30,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
         if (new != NULL)
         {
             /* Print the arrow -> as part of the output using putchar */
-            putchar('-');
-            putchar('>');
-            putchar(' ');
+            _putchar('-');
+            _putchar('>');
+            _putchar(' ');
 
             /* Print each digit individually without recursion */
             
