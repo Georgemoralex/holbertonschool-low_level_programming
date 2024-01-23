@@ -9,44 +9,48 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-	int count;
+    size_t count = 0;  // Use size_t for count
 
-	count = 0;
+    if (h == NULL)
+        return (count);
 
-	if (h == NULL)
-		return (count);
+    // Print arrow and count before the actual elements
+    _putchar('-');
+    _putchar('>');
+    _putchar(' ');
+    while (h->prev != NULL)
+        h = h->prev;
 
-	while (h->prev != NULL)
-		h = h->prev;
+    // Iterate through the list to print elements
+    while (h != NULL)
+    {
+        int num = h->n;
+        int divisor = 1;
 
-	while (h != NULL)
-	{
+        // Print arrow before each element
+        _putchar('-');
+        _putchar('>');
 
-		int num = h->n;
-		int divisor = 1;
+        // Print the actual element value
+        while (num / divisor >= 10)
+            divisor *= 10;
 
-		if (num < 0)
-		{
-			_putchar('-');
-			num = -num;
-		}
+        while (divisor != 0)
+        {
+            _putchar(num / divisor + '0');
+            num %= divisor;
+            divisor /= 10;
+        }
 
+        _putchar('\n');
+        count++;
+        h = h->next;
+    }
 
-		while (num / divisor >= 10)
-			divisor *= 10;
+    // Print the count after printing all elements
+    _putchar('-');
+    _putchar('>');
+    _putchar(' ');
 
-
-		while (divisor != 0)
-		{
-			_putchar(num / divisor + '0');
-			num %= divisor;
-			divisor /= 10;
-		}
-
-		_putchar('\n');
-		count++;
-		h = h->next;
-	}
-
-	return (count);
+    return (count);
 }
