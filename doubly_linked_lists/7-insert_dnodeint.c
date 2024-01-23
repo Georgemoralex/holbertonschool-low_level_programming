@@ -11,6 +11,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
     dlistint_t *new, *current;
     unsigned int i;
+	int divisor = 1;
 
     if (h == NULL)
         return NULL;
@@ -34,18 +35,18 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
             putchar(' ');
 
             /* Print each digit individually without recursion */
-            int divisor = 1;
+            
             while (n / divisor >= 10)
                 divisor *= 10;
 
             while (divisor != 0)
             {
-                putchar(n / divisor + '0');
+                _putchar(n / divisor + '0');
                 n %= divisor;
                 divisor /= 10;
             }
 
-            putchar('\n');
+            _putchar('\n');
         }
         return new;
     }
