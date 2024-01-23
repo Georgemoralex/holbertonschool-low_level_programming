@@ -10,36 +10,47 @@
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *new, *current;
-	unsigned int i;
+    dlistint_t *new, *current;
+    unsigned int i;
 
-	if (h == NULL)
-		return (NULL);
+    if (h == NULL)
+        return (NULL);
 
-	current = *h;
+    current = *h;
 
-	if (idx == 0)
-		return add_dnodeint(h, n);
+    /* Check if idx is 0, insert at the beginning */
+    if (idx == 0)
+        return add_dnodeint(h, n);
 
-	for (i = 0; i < idx - 1; i++)
-	{
-		if (current == NULL)
-			return (NULL);
-		current = current->next;
-	}
+    /* Traverse the list to the position before the desired index */
+    for (i = 0; i < idx - 1 && current != NULL; i++)
+        current = current->next;
 
-	if (current == NULL || current->next == NULL)
-		return (NULL);
+    /* Check if current is NULL (reached the end) or next is NULL (index out of bounds) */
+    if (current == NULL)
+        return (NULL);
 
-	new = malloc(sizeof(dlistint_t));
-	if (new == NULL)
-		return (NULL);
+    /* Create a new node */
+    new = malloc(sizeof(dlistint_t));
+    if (new == NULL)
+        return (NULL);
 
-	new->n = n;
-	new->prev = current;
-	new->next = current->next;
-	current->next->prev = new;
-	current->next = new;
+    /* Set the value and links of the new node */
+    new->n = n;
+    new->prev = current;
 
-	return (new);
+    /* Update links for the new node and the next node */
+    if (current->next != NULL)
+    {
+        new->next = current->next;
+        current->next->prev = new;
+    }
+    else
+    {
+        new->next = NULL;
+    }
+	
+    current->next = new;
+
+    return (new);
 }
