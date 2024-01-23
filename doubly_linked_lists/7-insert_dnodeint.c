@@ -24,14 +24,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
         head = *h;
         i = 1;
 
-        // Traverse the list to the position before the desired index
         while (head != NULL && i < idx)
         {
             head = head->next;
             i++;
         }
 
-        // Check if the index is within the current size of the list
         if (head != NULL)
         {
             new = malloc(sizeof(dlistint_t));
