@@ -4,17 +4,16 @@ size_t print_dlistint(const dlistint_t *h)
 {
     size_t count = 0;
 
-    if (h == NULL)
-        return count;
-
     while (h != NULL)
     {
         int num = h->n;
         int divisor = 1;
 
         if (count > 0)
-        {
             _putchar('\n');
+
+        if (h->prev != NULL)
+        {
             _putchar('-');
             _putchar('>');
             _putchar(' ');
@@ -35,17 +34,10 @@ size_t print_dlistint(const dlistint_t *h)
         h = h->next;
     }
 
-    if (count > 0)
-    {
-        _putchar('\n');
-        _putchar('-');
-        _putchar('>');
-        _putchar(' ');
-
-    }
 
     return count;
 }
+
 
 
 
