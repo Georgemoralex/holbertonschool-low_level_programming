@@ -39,7 +39,7 @@ size_t print_dlistint(const dlistint_t *h)
         _putchar('-');
         _putchar('>');
         _putchar(' ');
-        printf("%lu element%s\n", count, (count != 1) ? "s" : "");
+        
     }
 
     return count;
