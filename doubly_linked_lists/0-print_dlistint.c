@@ -35,12 +35,13 @@ size_t print_dlistint(const dlistint_t *h)
         h = h->next;
     }
 
-    if (count > 0)
+    if (count > 1) 
     {
         _putchar('\n');
         _putchar('-');
         _putchar('>');
         _putchar(' ');
+
     }
 
     return count;
