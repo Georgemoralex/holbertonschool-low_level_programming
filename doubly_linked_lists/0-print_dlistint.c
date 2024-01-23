@@ -1,18 +1,11 @@
 #include "lists.h"
 
-/**
- * print_dlistint - prints all the elements of a
- * dlistint_t list
- * @h: head of the list
- * Return: the number of nodes
- */
-
 size_t print_dlistint(const dlistint_t *h)
 {
-    size_t count = 0;  
+    size_t count = 0;
 
     if (h == NULL)
-        return (count);
+        return count;
 
     while (h != NULL)
     {
@@ -23,9 +16,7 @@ size_t print_dlistint(const dlistint_t *h)
         _putchar('>');
 
         while (num / divisor >= 10)
-        {
             divisor *= 10;
-        }
 
         while (divisor != 0)
         {
@@ -37,12 +28,17 @@ size_t print_dlistint(const dlistint_t *h)
         _putchar('\n');
         count++;
 
-        h = h->next;
+        if (h->next != NULL)
+            h = h->next;
+        else
+            break;
     }
 
     _putchar('-');
     _putchar('>');
     _putchar(' ');
-    
-    return (count);
+    printf("%lu element%s\n", count, (count != 1) ? "s" : "");
+
+    return count;
 }
+
