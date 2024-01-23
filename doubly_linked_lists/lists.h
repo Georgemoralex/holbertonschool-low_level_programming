@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stdio>
 
 /**
  * struct dlistint_s - doubly linked list
@@ -18,5 +19,9 @@ typedef struct dlistint_s
 	struct dlistint_s *prev;
 	struct dlistint_s *next;
 } dlistint_t;
+
+int _putchar(char c);
+size_t print_dlistint(const dlistint_t *h);
+
 
 #endif
