@@ -19,7 +19,7 @@ size_t print_dlistint(const dlistint_t *h)
 	while (h->prev != NULL)
 		h = h->prev;
 
-while (h != NULL)
+	while (h != NULL)
 	{
 
 		int num = h->n;
