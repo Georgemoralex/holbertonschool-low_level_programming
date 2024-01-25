@@ -23,14 +23,16 @@ size_t print_dlistint(const dlistint_t *h)
 		int num = h->n;
 		int div = 1;
 
-		while (num / div > 9)
-			div *= 10;
-
-		while (div != 0)
+		char str[12];
+		int i = 0;
+		while (num != 0)
 		{
-			_putchar(num / div + '0');
-			num %= div;
-			div /= 10;
+			str[i++] = num % 10 + '0';
+			num /= 10;
+		}
+		for (i--; i >= 0; i--)
+		{
+			_putchar(str[i]);
 		}
 
 		_putchar('\n');
