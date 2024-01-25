@@ -21,7 +21,6 @@ size_t print_dlistint(const dlistint_t *h)
 	while (h != NULL)
 	{
 		int num = h->n;
-		int div = 1;
 
 		char str[12];
 		int i = 0;
