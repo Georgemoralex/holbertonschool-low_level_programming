@@ -24,11 +24,24 @@ size_t print_dlistint(const dlistint_t *h)
 
 		char str[12];
 		int i = 0;
+
+		if (num < 0)
+		{
+			_putchar('-');
+			num = -num;
+		}
+
 		while (num != 0)
 		{
 			str[i++] = num % 10 + '0';
 			num /= 10;
 		}
+
+		if (i == 0)
+		{
+			_putchar('0');
+		}
+
 		for (i--; i >= 0; i--)
 		{
 			_putchar(str[i]);
