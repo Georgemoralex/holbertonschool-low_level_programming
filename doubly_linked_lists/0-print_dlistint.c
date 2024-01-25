@@ -20,7 +20,7 @@ size_t print_dlistint(const dlistint_t *h)
 		int num = h->n;
 		char str[12];
 		int i = 0;
-		
+
 		if (num < 0)
 		{
 			_putchar('-');
