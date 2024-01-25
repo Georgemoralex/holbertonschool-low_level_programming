@@ -31,10 +31,10 @@ size_t print_dlistint(const dlistint_t *h)
 		}
 		for (i--; i >= 0; i--)
 		{
-			putchar(str[i]);
+			_putchar(str[i]);
 		}
 
-		putchar('\n');
+		_putchar('\n');
 		count++;
 		h = h->next;
 	}
