@@ -13,14 +13,14 @@ size_t print_dlistint(const dlistint_t *h)
     if (h == NULL)
         return (count);
 
-    // Print the arrow before the first element
+
     printf("-> %d\n", h->n);
     count++;
 
-    // Move to the next node
+
     h = h->next;
 
-    // Print the rest of the elements
+
     while (h != NULL)
     {
         printf("%d\n", h->n);
