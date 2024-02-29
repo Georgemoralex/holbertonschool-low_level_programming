@@ -11,12 +11,12 @@ int main(void)
     head = add_dnodeint_end(&head, 9);
     head = add_dnodeint_end(&head, 6);
 
-    printf("-> %d\n", head->n); // Print the first element separately
+    printf("-> %d\n", head->n);
     for (node = head->next; node != NULL; node = node->next)
         printf("%d\n", node->n);
     printf("-> 3 elements\n");
 
-    printf("-> %d\n", node->prev->n); // Print the last element separately
+    printf("-> %d\n", node->prev->n);
     for (; node != NULL; node = node->prev)
         printf("%d\n", node->n);
     printf("-> 3 elements\n");
