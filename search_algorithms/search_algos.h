@@ -7,6 +7,7 @@
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
 
+void print_scope(int *array, int left, int right);
 
 
 
